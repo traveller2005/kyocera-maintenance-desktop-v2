@@ -1,0 +1,41 @@
+name: Build Kyocera Engine (Win 7 Compatible)
+
+# متى يتم تشغيل هذا الأكشن؟
+on:
+  workflow_dispatch:  # يسمح لك بتشغيل البناء يدوياً من زر "Run workflow"
+  push:
+    branches: [ "main", "master" ] # يعمل تلقائياً عند رفع تعديلات جديدة
+
+jobs:
+  build-windows7-exe:
+    # استخدام أقدم سيرفر ويندوز متاح في جيتهاب لضمان أقصى توافقية مع الأنظمة القديمة
+    runs-on: windows-2019 
+
+    steps:
+    - name: 📥 Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python 3.8 (Last version for Win 7)
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.8' 
+        architecture: 'x64' # إذا كانت أجهزة المهندسين لديك 32-بت، قم بتغييرها إلى 'x86'
+
+    - name: 📦 Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # نستخدم إصدار PyInstaller متوافق ومستقر جداً مع Python 3.8 و Win 7
+        pip install pyinstaller==5.13.2
+        # تثبيت مكتبات البرنامج الأساسية
+        pip install customtkinter pillow requests urllib3 arabic_reshaper python-bidi pywin32
+
+    - name: 🛠️ Build with PyInstaller
+      run: |
+        # بناء البرنامج بدون نافذة سوداء (windowed) ونسخ ملفات JSON بجواره
+        pyinstaller --noconfirm --windowed --name "Kyocera_Deep_Engine" --add-data "*.json;." Kyocera_Deep_Engine.py
+
+    - name: 📤 Upload Windows 7 Compatible Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Kyocera-Engine-Win7-Ready
+        path: dist/Kyocera_Deep_Engine
