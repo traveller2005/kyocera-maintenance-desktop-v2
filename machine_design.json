@@ -1,0 +1,1037 @@
+{
+    "PWBs": [
+        {
+            "name": "Main PWB",
+            "job_en": "Controlling the entire software to control the interface to the PC and network and image data process, etc. Controlling the entire hardware to control operation section.",
+            "job_ar": "التحكم في البرمجيات بالكامل للتحكم في الواجهة مع الكمبيوتر والشبكة ومعالجة بيانات الصور، والتحكم في الأجهزة بالكامل للتحكم في قسم التشغيل."
+        },
+        {
+            "name": "Engine PWB",
+            "job_en": "Controlling the hardware such as electric parts drive, high voltage, bias output, image scanner unit, paper conveying, fuser temperature, etc.",
+            "job_ar": "التحكم في الأجهزة مثل تشغيل القطع الكهربائية، الجهد العالي، خرج الانحياز، وحدة ماسح الصور، نقل الورق، درجة حرارة وحدة الصهر، إلخ."
+        },
+        {
+            "name": "Feed image PWB",
+            "job_en": "Consisting of the engine PWB and wiring relay circuit for drum units, developer units, fuser drive section and exit drive section.",
+            "job_ar": "تتكون من لوحة المحرك ودائرة ترحيل التوصيلات لوحدات الأسطوانة، ووحدات المظهر، وقسم تشغيل وحدة الصهر وقسم تشغيل الخروج."
+        },
+        {
+            "name": "Feed drive PWB",
+            "job_en": "Consisting of the engine PWB, and relay circuit for the paper feed drive section and paper conveying drive section.",
+            "job_ar": "تتكون من لوحة المحرك، ودائرة الترحيل لقسم تشغيل تغذية الورق وقسم تشغيل نقل الورق."
+        },
+        {
+            "name": "Main high-voltage PWB",
+            "job_en": "Generating the main charger bias and the developer bias.",
+            "job_ar": "توليد انحياز الشاحن الرئيسي وانحياز المظهر."
+        },
+        {
+            "name": "Low voltage PWB / Low power voltage PEB",
+            "job_en": "Rectifying the AC power input to the full-wave and converting it to DC, and controlling the fuser heater.",
+            "job_ar": "تقويم دخل طاقة التيار المتردد إلى موجة كاملة وتحويله إلى تيار مستمر، والتحكم في سخان وحدة الصهر."
+        },
+        {
+            "name": "Transfer connect PWB",
+            "job_en": "Consisting of the feed image PWB and wiring relay circuit for the transfer PWB.",
+            "job_ar": "تتكون من لوحة تغذية الصور ودائرة ترحيل التوصيلات للوحة النقل."
+        },
+        {
+            "name": "Transfer high-voltage PWB",
+            "job_en": "Generating the transfer bias, separation bias and transfer cleaning bias.",
+            "job_ar": "توليد انحياز النقل، وانحياز الفصل، وانحياز تنظيف النقل."
+        },
+        {
+            "name": "Transfer PWB",
+            "job_en": "Storing the drum unique data in an EEPROM. Wiring connection PWB for the belt cleaning motor, belt thermistor and feed image PWB.",
+            "job_ar": "تخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM. لوحة توصيل الأسلاك لمحرك تنظيف الحزام، ومقاوم حرارة الحزام ولوحة تغذية الصور."
+        },
+        {
+            "name": "Operation panel main PWB",
+            "job_en": "It consists of the main PWB and wiring relay circuit for the operation panel sub PWB and the LCD.",
+            "job_ar": "تتكون من اللوحة الرئيسية ودائرة ترحيل التوصيلات للوحة التشغيل الفرعية وشاشة LCD."
+        },
+        {
+            "name": "Operation panel sub PWB",
+            "job_en": "Consisting of the LED indicator and the key switches.",
+            "job_ar": "تتكون من مؤشر LED ومفاتيح التشغيل."
+        },
+        {
+            "name": "APC PWB",
+            "job_en": "Emitting and controlling the laser beam.",
+            "job_ar": "إصدار والتحكم في شعاع الليزر."
+        },
+        {
+            "name": "PD PWB",
+            "job_en": "Controlling the synchronous lateral laser beam.",
+            "job_ar": "التحكم في شعاع الليزر المتزامن الجانبي."
+        },
+        {
+            "name": "LED PWB",
+            "job_en": "Controlling the LED.",
+            "job_ar": "التحكم في مؤشر LED."
+        },
+        {
+            "name": "CCD PWB",
+            "job_en": "Scanning the original image.",
+            "job_ar": "مسح الصورة الأصلية."
+        },
+        {
+            "name": "Developer PWB K",
+            "job_en": "Wiring relay to the electric parts inside developer unit (Black).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة المظهر (الأسود)."
+        },
+        {
+            "name": "Developer PWB M",
+            "job_en": "Wiring relay to the electric parts inside developer unit (Magenta).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة المظهر (الأرجواني)."
+        },
+        {
+            "name": "Developer PWB C",
+            "job_en": "Wiring relay to the electric parts inside developer unit (Cyan).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة المظهر (السيان)."
+        },
+        {
+            "name": "Developer PWB Y",
+            "job_en": "Wiring relay to the electric parts inside developer unit (Yellow).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة المظهر (الأصفر)."
+        },
+        {
+            "name": "Drum/Developer relay PWB",
+            "job_en": "Consisting of the feed image PWB, the drum and wiring relay circuit with developer unit.",
+            "job_ar": "تتكون من لوحة تغذية الصور، والأسطوانة ودائرة ترحيل التوصيلات مع وحدة المظهر."
+        },
+        {
+            "name": "Drum PWB K",
+            "job_en": "Wiring relay to the electric parts inside drum unit. Storing the drum unique data in an EEPROM (Black).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة الأسطوانة وتخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM (الأسود)."
+        },
+        {
+            "name": "Drum PWB M",
+            "job_en": "Wiring relay to the electric parts inside drum unit. Storing the drum unique data in an EEPROM (Magenta).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة الأسطوانة وتخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM (الأرجواني)."
+        },
+        {
+            "name": "Drum PWB C",
+            "job_en": "Wiring relay to the electric parts inside drum unit. Storing the drum unique data in an EEPROM (Cyan).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة الأسطوانة وتخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM (السيان)."
+        },
+        {
+            "name": "Drum PWB Y",
+            "job_en": "Wiring relay to the electric parts inside drum unit. Storing the drum unique data in an EEPROM (Yellow).",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة الأسطوانة وتخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM (الأصفر)."
+        },
+        {
+            "name": "Fuser PWB",
+            "job_en": "Wiring relay to the electric parts inside developer unit. Storing the drum unique data in an EEPROM.",
+            "job_ar": "ترحيل التوصيلات للأجزاء الكهربائية داخل وحدة الصهر وتخزين بيانات الأسطوانة الفريدة في ذاكرة EEPROM."
+        },
+        {
+            "name": "IH PWB",
+            "job_en": "Controlling IH (Induction Heating).",
+            "job_ar": "التحكم في التسخين الحثي (IH)."
+        },
+        {
+            "name": "NFC PWB",
+            "job_en": "Antenna circuit for wireless communication.",
+            "job_ar": "دارة الهوائي للاتصال اللاسلكي (NFC)."
+        },
+        {
+            "name": "RFID PWB",
+            "job_en": "Reading the toner container information.",
+            "job_ar": "قراءة معلومات حاوية الحبر (RFID)."
+        },
+        {
+            "name": "USB hub PWB",
+            "job_en": "USB slot distribution.",
+            "job_ar": "توزيع منافذ USB."
+        },
+        {
+            "name": "KUIO relay PWB",
+            "job_en": "Consisting of the main PWB and wiring relay circuit for FAX PWB.",
+            "job_ar": "تتكون من اللوحة الرئيسية ودائرة ترحيل التوصيلات للوحة الفاكس."
+        },
+        {
+            "name": "Fuser high voltage PWB",
+            "job_en": "Discharging the fuser heater belt.",
+            "job_ar": "تفريغ شحنة حزام سخان وحدة الصهر."
+        }
+    ],
+    "Sensors_Switches": [
+        {
+            "name": "Paper sensor 1",
+            "job_en": "Detecting presence of paper in the cassette 1.",
+            "job_ar": "كشف وجود الورق في الدرج 1."
+        },
+        {
+            "name": "Paper sensor 2",
+            "job_en": "Detecting presence of paper in the cassette 2.",
+            "job_ar": "كشف وجود الورق في الدرج 2."
+        },
+        {
+            "name": "Lower paper gauge sensor 1",
+            "job_en": "Detecting the level of the remaining paper in the cassette 1.",
+            "job_ar": "كشف المستوى السفلي للورق المتبقي في الدرج 1."
+        },
+        {
+            "name": "Upper paper gauge sensor 1",
+            "job_en": "Detecting the level of the remaining paper in the cassette 1.",
+            "job_ar": "كشف المستوى العلوي للورق المتبقي في الدرج 1."
+        },
+        {
+            "name": "Lower paper gauge sensor 2",
+            "job_en": "Detecting the level of the remaining paper in the cassette 2.",
+            "job_ar": "كشف المستوى السفلي للورق المتبقي في الدرج 2."
+        },
+        {
+            "name": "Upper paper gauge sensor 2",
+            "job_en": "Detecting the level of the remaining paper in the cassette 2.",
+            "job_ar": "كشف المستوى العلوي للورق المتبقي في الدرج 2."
+        },
+        {
+            "name": "Paper length sensor 1",
+            "job_en": "Detecting the size of paper length in the cassette 1.",
+            "job_ar": "كشف مقاس طول الورق في الدرج 1."
+        },
+        {
+            "name": "Paper length sensor 2",
+            "job_en": "Detecting the size of paper length in the cassette 2.",
+            "job_ar": "كشف مقاس طول الورق في الدرج 2."
+        },
+        {
+            "name": "Paper width sensor 1",
+            "job_en": "Detecting the size of paper width in the cassette 1.",
+            "job_ar": "كشف مقاس عرض الورق في الدرج 1."
+        },
+        {
+            "name": "Paper width sensor 2",
+            "job_en": "Detecting the size of paper width in the cassette 2.",
+            "job_ar": "كشف مقاس عرض الورق في الدرج 2."
+        },
+        {
+            "name": "DU sensor 1",
+            "job_en": "Detecting paper jam at the duplex section.",
+            "job_ar": "كشف انحشار الورق في قسم وحدة الوجهين 1."
+        },
+        {
+            "name": "DU sensor 2",
+            "job_en": "Detecting paper jam at the duplex section.",
+            "job_ar": "كشف انحشار الورق في قسم وحدة الوجهين 2."
+        },
+        {
+            "name": "Conveying sensor",
+            "job_en": "Detecting paper jam at the paper conveying section.",
+            "job_ar": "كشف انحشار الورق في قسم نقل الورق."
+        },
+        {
+            "name": "Original size sensor",
+            "job_en": "Detecting the original size.",
+            "job_ar": "كشف حجم المستند الأصلي."
+        },
+        {
+            "name": "Home position sensor",
+            "job_en": "Detecting the position of the image scanner unit.",
+            "job_ar": "كشف الموضع الرئيسي لوحدة ماسح الصور."
+        },
+        {
+            "name": "Rear ID sensor",
+            "job_en": "Measuring the toner density at the calibration.",
+            "job_ar": "قياس كثافة الحبر الخلفية عند المعايرة."
+        },
+        {
+            "name": "Front ID sensor",
+            "job_en": "Measuring the toner density at the calibration.",
+            "job_ar": "قياس كثافة الحبر الأمامية عند المعايرة."
+        },
+        {
+            "name": "MP tray sensor",
+            "job_en": "Detecting the MP tray is pulled out.",
+            "job_ar": "كشف سحب صينية التغذية اليدوية (MP)."
+        },
+        {
+            "name": "MP conveying sensor",
+            "job_en": "Detecting paper jam at the MP paper conveying section.",
+            "job_ar": "كشف انحشار الورق في قسم نقل ورق التغذية اليدوية."
+        },
+        {
+            "name": "MP paper sensor",
+            "job_en": "Detecting the presence of paper on the MP tray.",
+            "job_ar": "كشف وجود الورق على صينية التغذية اليدوية."
+        },
+        {
+            "name": "MP paper length sensor",
+            "job_en": "Detecting the size of paper length on the MP tray.",
+            "job_ar": "كشف مقاس طول الورق على صينية التغذية اليدوية."
+        },
+        {
+            "name": "MP paper width sensor",
+            "job_en": "Detecting the size of paper width on the MP tray.",
+            "job_ar": "كشف مقاس عرض الورق على صينية التغذية اليدوية."
+        },
+        {
+            "name": "T/C sensor K",
+            "job_en": "Detecting the toner density in the developer unit, storing the developer individual data by EEPROM (Black).",
+            "job_ar": "كشف كثافة الحبر في وحدة المظهر، وتخزين البيانات الفردية للمظهر بواسطة EEPROM (الأسود)."
+        },
+        {
+            "name": "T/C sensor M",
+            "job_en": "Detecting the toner density in the developer unit (Magenta).",
+            "job_ar": "كشف كثافة الحبر في وحدة المظهر (الأرجواني)."
+        },
+        {
+            "name": "T/C sensor C",
+            "job_en": "Detecting the toner density in the developer unit (Cyan).",
+            "job_ar": "كشف كثافة الحبر في وحدة المظهر (السيان)."
+        },
+        {
+            "name": "T/C sensor Y",
+            "job_en": "Detecting the toner density in the developer unit (Yellow).",
+            "job_ar": "كشف كثافة الحبر في وحدة المظهر (الأصفر)."
+        },
+        {
+            "name": "Toner level sensor K",
+            "job_en": "Detecting toner level in the developer unit (Black).",
+            "job_ar": "كشف مستوى الحبر في وحدة المظهر (الأسود)."
+        },
+        {
+            "name": "Toner level sensor M",
+            "job_en": "Detecting the toner level in the developer unit (Magenta).",
+            "job_ar": "كشف مستوى الحبر في وحدة المظهر (الأرجواني)."
+        },
+        {
+            "name": "Toner level sensor C",
+            "job_en": "Detecting the toner level in the developer unit (Cyan).",
+            "job_ar": "كشف مستوى الحبر في وحدة المظهر (السيان)."
+        },
+        {
+            "name": "Toner level sensor Y",
+            "job_en": "Detecting the toner level in the developer unit (Yellow).",
+            "job_ar": "كشف مستوى الحبر في وحدة المظهر (الأصفر)."
+        },
+        {
+            "name": "Belt thermistor",
+            "job_en": "Detecting the transfer belt temperature.",
+            "job_ar": "كشف درجة حرارة حزام النقل."
+        },
+        {
+            "name": "Belt release sensor",
+            "job_en": "Detecting the transfer belt release position.",
+            "job_ar": "كشف موضع تحرير حزام النقل."
+        },
+        {
+            "name": "Front belt rotation sensor",
+            "job_en": "Detecting the fuser rotation position (Front).",
+            "job_ar": "كشف موضع دوران حزام وحدة الصهر (الأمامي)."
+        },
+        {
+            "name": "Rear belt rotation sensor",
+            "job_en": "Detecting the fuser rotation position (Rear).",
+            "job_ar": "كشف موضع دوران حزام وحدة الصهر (الخلفي)."
+        },
+        {
+            "name": "Belt roll-up sensor",
+            "job_en": "Detecting the fuser belt roll-up.",
+            "job_ar": "كشف التفاف حزام وحدة الصهر."
+        },
+        {
+            "name": "Retard sensor 1",
+            "job_en": "Detecting the retard roller rotation of cassette 1.",
+            "job_ar": "كشف دوران بكرة الإعاقة للدرج 1."
+        },
+        {
+            "name": "Retard sensor 2",
+            "job_en": "Detecting the retard roller rotation of cassette 2.",
+            "job_ar": "كشف دوران بكرة الإعاقة للدرج 2."
+        },
+        {
+            "name": "Lift upper limit sensor 1",
+            "job_en": "Detecting the upper limit when the lift plate of the cassette 1 is activated.",
+            "job_ar": "كشف الحد العلوي عند تفعيل لوحة الرفع للدرج 1."
+        },
+        {
+            "name": "Lift upper limit sensor 2",
+            "job_en": "Detecting the upper limit when the lift plate of the cassette 2 is activated.",
+            "job_ar": "كشف الحد العلوي عند تفعيل لوحة الرفع للدرج 2."
+        },
+        {
+            "name": "Registration sensor",
+            "job_en": "Controlling the timing to start the secondary paper feeding.",
+            "job_ar": "التحكم في توقيت بدء التغذية الثانوية للورق."
+        },
+        {
+            "name": "LSU thermistor",
+            "job_en": "Detecting the LSU temperature.",
+            "job_ar": "كشف درجة حرارة وحدة ليزر الماسح (LSU)."
+        },
+        {
+            "name": "Weight sensor",
+            "job_en": "Detecting the waste toner box weight.",
+            "job_ar": "كشف وزن صندوق عادم الحبر."
+        },
+        {
+            "name": "Fuser sensor",
+            "job_en": "Detecting the paper jam at the fuser section.",
+            "job_ar": "كشف انحشار الورق في قسم وحدة الصهر."
+        },
+        {
+            "name": "Fuser pressure release sensor",
+            "job_en": "Detecting the mode of the fuser pressure.",
+            "job_ar": "كشف وضع تحرير ضغط وحدة الصهر."
+        },
+        {
+            "name": "IH position sensor",
+            "job_en": "Detecting the IH core home position.",
+            "job_ar": "كشف الموضع الرئيسي لقلب التسخين الحثي (IH)."
+        },
+        {
+            "name": "Fuser thermistor 1 (middle)",
+            "job_en": "Detecting the heat roller (fuser belt) temperature (middle).",
+            "job_ar": "كشف درجة حرارة بكرة التسخين (حزام الصهر) (المنتصف)."
+        },
+        {
+            "name": "Fuser thermistor 2 (center)",
+            "job_en": "Detecting the heat roller (fuser belt) temperature (center).",
+            "job_ar": "كشف درجة حرارة بكرة التسخين (حزام الصهر) (المركز)."
+        },
+        {
+            "name": "Fuser thermistor 3 (edge)",
+            "job_en": "Detecting the heat roller (fuser belt) temperature (edge).",
+            "job_ar": "كشف درجة حرارة بكرة التسخين (حزام الصهر) (الحافة)."
+        },
+        {
+            "name": "Fuser thermistor 4 (press)",
+            "job_en": "Detecting the press roller temperature.",
+            "job_ar": "كشف درجة حرارة بكرة الضغط."
+        },
+        {
+            "name": "Exit reversing sensor",
+            "job_en": "Detecting jam at the exit section.",
+            "job_ar": "كشف الانحشار عند قسم الخروج والعكس."
+        },
+        {
+            "name": "Lower exit full sensor",
+            "job_en": "Detecting the paper-full on the inner tray.",
+            "job_ar": "كشف امتلاء الورق في صينية الخروج السفلية (الداخلية)."
+        },
+        {
+            "name": "Upper exit full sensor",
+            "job_en": "Detecting the paper-full on the inner tray.",
+            "job_ar": "كشف امتلاء الورق في صينية الخروج العلوية (الداخلية)."
+        },
+        {
+            "name": "JS sensor",
+            "job_en": "Detecting the paper-full on the job separator or attachment kit.",
+            "job_ar": "كشف امتلاء الورق في فاصل الوظائف أو طقم الملحقات."
+        },
+        {
+            "name": "Front cover sensor",
+            "job_en": "Detecting opening/closing of the front cover.",
+            "job_ar": "كشف فتح/إغلاق الغطاء الأمامي."
+        },
+        {
+            "name": "Original size timing sensor",
+            "job_en": "Detecting the opening and closing of the document processor.",
+            "job_ar": "كشف توقيت فتح وإغلاق معالج المستندات."
+        },
+        {
+            "name": "PF switch",
+            "job_en": "Detecting the paper feeder.",
+            "job_ar": "مفتاح كشف وحدة تغذية الورق."
+        },
+        {
+            "name": "Main Power Switch",
+            "job_en": "Main Power Switch.",
+            "job_ar": "مفتاح الطاقة الرئيسي."
+        },
+        {
+            "name": "Power switch",
+            "job_en": "Turning on and off the main/engine PWB, the engine relay PWB and the operation panel PWB, etc.",
+            "job_ar": "تشغيل وإيقاف لوحة التحكم الرئيسية/المحرك، ولوحة ترحيل المحرك ولوحة التشغيل، إلخ."
+        },
+        {
+            "name": "Conveying open/close sensor",
+            "job_en": "Detecting opening/closing of the conveying section.",
+            "job_ar": "كشف فتح/إغلاق قسم نقل الورق."
+        },
+        {
+            "name": "Waste toner full sensor",
+            "job_en": "Detecting the waste toner box full.",
+            "job_ar": "كشف امتلاء صندوق عادم الحبر."
+        },
+        {
+            "name": "Right cover switch",
+            "job_en": "Blocking the 24 V power line when the right cover is open and reset interlock switch.",
+            "job_ar": "قطع خط طاقة 24 فولت عند فتح الغطاء الأيمن وإعادة ضبط مفتاح الأمان المتداخل."
+        },
+        {
+            "name": "Temperature/humidity sensor",
+            "job_en": "Detecting the temperature and humidity outside the main unit.",
+            "job_ar": "كشف درجة الحرارة والرطوبة خارج الوحدة الرئيسية."
+        },
+        {
+            "name": "MP position sensor",
+            "job_en": "Detecting the MP lift plate position.",
+            "job_ar": "كشف موضع لوحة رفع صينية التغذية اليدوية."
+        },
+        {
+            "name": "Cassette sensor 1",
+            "job_en": "Detecting the cassette 1.",
+            "job_ar": "كشف وجود درج الورق 1."
+        },
+        {
+            "name": "Cassette sensor 2",
+            "job_en": "Detecting the cassette 2.",
+            "job_ar": "كشف وجود درج الورق 2."
+        },
+        {
+            "name": "Toner motor rotation sensor K",
+            "job_en": "Detecting toner motor K rotation.",
+            "job_ar": "كشف دوران محرك الحبر الأسود (K)."
+        },
+        {
+            "name": "Toner motor rotation sensor M",
+            "job_en": "Detecting toner motor M rotation.",
+            "job_ar": "كشف دوران محرك الحبر الأرجواني (M)."
+        },
+        {
+            "name": "Toner motor rotation sensor C",
+            "job_en": "Detecting toner motor C rotation.",
+            "job_ar": "كشف دوران محرك الحبر السيان (C)."
+        },
+        {
+            "name": "Toner motor rotation sensor Y",
+            "job_en": "Detecting toner motor Y rotation.",
+            "job_ar": "كشف دوران محرك الحبر الأصفر (Y)."
+        }
+    ],
+    "Motors": [
+        {
+            "name": "IH core motor",
+            "job_en": "Drive the IH core.",
+            "job_ar": "تشغيل قلب التسخين الحثي (IH)."
+        },
+        {
+            "name": "Scanner motor",
+            "job_en": "Drive the optical section.",
+            "job_ar": "تشغيل القسم البصري (الماسح)."
+        },
+        {
+            "name": "Polygon motor",
+            "job_en": "Drive the polygon mirror.",
+            "job_ar": "تشغيل المرآة المضلعة."
+        },
+        {
+            "name": "LSU cleaning motor",
+            "job_en": "Driving the LSU dustproof glass cleaning mechanism.",
+            "job_ar": "تشغيل آلية تنظيف الزجاج الواقي من الغبار لوحدة الليزر (LSU)."
+        },
+        {
+            "name": "Belt cleaning motor",
+            "job_en": "Driving the cleaning roller of the primary transfer belt.",
+            "job_ar": "تشغيل بكرة تنظيف حزام النقل الأساسي."
+        },
+        {
+            "name": "Belt release motor",
+            "job_en": "Driving to release the primary transfer belt.",
+            "job_ar": "التشغيل لتحرير حزام النقل الأساسي."
+        },
+        {
+            "name": "MP lift motor",
+            "job_en": "Operates the MP plate.",
+            "job_ar": "تشغيل لوحة صينية التغذية اليدوية."
+        },
+        {
+            "name": "Container motor",
+            "job_en": "Drive the container.",
+            "job_ar": "تشغيل حاوية الحبر."
+        },
+        {
+            "name": "Toner motor K",
+            "job_en": "Supplying toner to developer unit (Black).",
+            "job_ar": "تزويد وحدة المظهر بالحبر الأسود (K)."
+        },
+        {
+            "name": "Toner motor M",
+            "job_en": "Supplying the toner to developer unit (Magenta).",
+            "job_ar": "تزويد وحدة المظهر بالحبر الأرجواني (M)."
+        },
+        {
+            "name": "Toner motor C",
+            "job_en": "Supplying the toner to developer unit (Cyan).",
+            "job_ar": "تزويد وحدة المظهر بالحبر السيان (C)."
+        },
+        {
+            "name": "Toner motor Y",
+            "job_en": "Supplying the toner to developer unit (Yellow).",
+            "job_ar": "تزويد وحدة المظهر بالحبر الأصفر (Y)."
+        },
+        {
+            "name": "Drum motor K",
+            "job_en": "Driving of the drum unit (Black).",
+            "job_ar": "تشغيل وحدة الأسطوانة السوداء (K)."
+        },
+        {
+            "name": "Drum motor CMY",
+            "job_en": "Driving of the drum unit (CMY).",
+            "job_ar": "تشغيل وحدة الأسطوانة الملونة (CMY)."
+        },
+        {
+            "name": "Lift motor 1",
+            "job_en": "Activating the lift plate of the cassette 1.",
+            "job_ar": "تفعيل لوحة الرفع لدرج الورق 1."
+        },
+        {
+            "name": "Lift motor 2",
+            "job_en": "Activating the lift plate of the cassette 2.",
+            "job_ar": "تفعيل لوحة الرفع لدرج الورق 2."
+        },
+        {
+            "name": "Paper feed motor",
+            "job_en": "Drive the paper feed mechanism.",
+            "job_ar": "تشغيل آلية تغذية الورق."
+        },
+        {
+            "name": "Developer K / Transfer belt motor",
+            "job_en": "Driving the developer unit K and the primary transfer belt.",
+            "job_ar": "تشغيل وحدة المظهر السوداء (K) وحزام النقل الأساسي."
+        },
+        {
+            "name": "Developer motor CMY",
+            "job_en": "Drive the developer units (CMY).",
+            "job_ar": "تشغيل وحدات المظهر الملونة (CMY)."
+        },
+        {
+            "name": "Vibration motor K (Developer)",
+            "job_en": "Vibrating the developer unit K.",
+            "job_ar": "اهتزاز وحدة المظهر السوداء (K)."
+        },
+        {
+            "name": "Vibration motor M (Developer)",
+            "job_en": "Vibrating the developer unit M.",
+            "job_ar": "اهتزاز وحدة المظهر الأرجوانية (M)."
+        },
+        {
+            "name": "Vibration motor C (Developer)",
+            "job_en": "Vibrating the developer unit C.",
+            "job_ar": "اهتزاز وحدة المظهر السيان (C)."
+        },
+        {
+            "name": "Vibration motor Y (Developer)",
+            "job_en": "Vibrating the developer unit Y.",
+            "job_ar": "اهتزاز وحدة المظهر الصفراء (Y)."
+        },
+        {
+            "name": "Fuser motor",
+            "job_en": "Drive the fuser section.",
+            "job_ar": "تشغيل قسم وحدة الصهر."
+        },
+        {
+            "name": "Fuser pressure release motor",
+            "job_en": "Driving the fuser pressure release.",
+            "job_ar": "تشغيل آلية تحرير ضغط وحدة الصهر."
+        },
+        {
+            "name": "Waste toner motor",
+            "job_en": "Drive the waste toner mechanism.",
+            "job_ar": "تشغيل آلية عادم الحبر."
+        },
+        {
+            "name": "Exit reversing motor",
+            "job_en": "Driving the exit section.",
+            "job_ar": "تشغيل قسم الخروج والعكس."
+        },
+        {
+            "name": "IH PWB fan motor",
+            "job_en": "Cooling the IH PWB.",
+            "job_ar": "تبريد لوحة التسخين الحثي (IH PWB)."
+        },
+        {
+            "name": "Toner absorption fan motor",
+            "job_en": "Absorb scattering waste toner.",
+            "job_ar": "امتصاص الحبر العادم المتناثر."
+        },
+        {
+            "name": "Controller fan motor",
+            "job_en": "Absorb scattering waste toner / cooling controller.",
+            "job_ar": "امتصاص الحبر العادم المتناثر / تبريد وحدة التحكم."
+        },
+        {
+            "name": "Developer fan motor K",
+            "job_en": "Cooling the developer section (Black).",
+            "job_ar": "تبريد قسم المظهر الأسود (K)."
+        },
+        {
+            "name": "Developer fan motor M",
+            "job_en": "Cooling the developer section (Magenta).",
+            "job_ar": "تبريد قسم المظهر الأرجواني (M)."
+        },
+        {
+            "name": "Developer fan motor C",
+            "job_en": "Cooling the developer section (Cyan).",
+            "job_ar": "تبريد قسم المظهر السيان (C)."
+        },
+        {
+            "name": "Developer fan motor Y",
+            "job_en": "Cooling the developer section (Yellow).",
+            "job_ar": "تبريد قسم المظهر الأصفر (Y)."
+        },
+        {
+            "name": "Fuser edge fan motor",
+            "job_en": "Cooling the edge of the fuser heater belt.",
+            "job_ar": "تبريد حافة حزام سخان وحدة الصهر."
+        },
+        {
+            "name": "Power source fan motor",
+            "job_en": "Cooling the power source PWB and high-voltage PWB.",
+            "job_ar": "تبريد لوحة طاقة التشغيل ولوحة الجهد العالي."
+        },
+        {
+            "name": "Exit/IH front fan motor",
+            "job_en": "Cooling output paper/IH (Front).",
+            "job_ar": "تبريد الورق الخارج/التسخين الحثي (الأمامي)."
+        },
+        {
+            "name": "Exit/IH middle fan motor",
+            "job_en": "Cooling output paper/IH (Middle).",
+            "job_ar": "تبريد الورق الخارج/التسخين الحثي (المنتصف)."
+        },
+        {
+            "name": "Exit/IH rear fan motor",
+            "job_en": "Cooling output paper/IH (Rear).",
+            "job_ar": "تبريد الورق الخارج/التسخين الحثي (الخلفي)."
+        },
+        {
+            "name": "Container right fan motor",
+            "job_en": "Cooling container/toner hopper.",
+            "job_ar": "تبريد الحاوية اليمنى/موزع الحبر."
+        },
+        {
+            "name": "Exit fan motor",
+            "job_en": "Cooling the exit section.",
+            "job_ar": "تبريد قسم الخروج."
+        },
+        {
+            "name": "Vibration motor K (Waste toner duct)",
+            "job_en": "Vibrating the waste toner duct K.",
+            "job_ar": "اهتزاز مجرى عادم الحبر الأسود (K)."
+        },
+        {
+            "name": "Vibration motor M (Waste toner duct)",
+            "job_en": "Vibrating the waste toner duct M.",
+            "job_ar": "اهتزاز مجرى عادم الحبر الأرجواني (M)."
+        },
+        {
+            "name": "Vibration motor C (Waste toner duct)",
+            "job_en": "Vibrating the waste toner duct C.",
+            "job_ar": "اهتزاز مجرى عادم الحبر السيان (C)."
+        },
+        {
+            "name": "Vibration motor Y (Waste toner duct)",
+            "job_en": "Vibrating the waste toner duct Y.",
+            "job_ar": "اهتزاز مجرى عادم الحبر الأصفر (Y)."
+        },
+        {
+            "name": "Rear exit motor",
+            "job_en": "Driving the exit section (Rear).",
+            "job_ar": "تشغيل قسم الخروج (الخلفي)."
+        },
+        {
+            "name": "Container left fan motor",
+            "job_en": "Cooling container (Left).",
+            "job_ar": "تبريد الحاوية اليسرى."
+        }
+    ],
+    "Drive_System": [
+        {
+            "motor": "IH core motor",
+            "driven_parts": [
+                "IH core"
+            ]
+        },
+        {
+            "motor": "Scanner motor",
+            "driven_parts": [
+                "Optical section"
+            ]
+        },
+        {
+            "motor": "Polygon motor",
+            "driven_parts": [
+                "Polygon mirror"
+            ]
+        },
+        {
+            "motor": "LSU cleaning motor",
+            "driven_parts": [
+                "LSU dustproof glass cleaning mechanism"
+            ]
+        },
+        {
+            "motor": "Belt cleaning motor",
+            "driven_parts": [
+                "Cleaning roller of the primary transfer belt"
+            ]
+        },
+        {
+            "motor": "Belt release motor",
+            "driven_parts": [
+                "Primary transfer belt release mechanism"
+            ]
+        },
+        {
+            "motor": "MP lift motor",
+            "driven_parts": [
+                "MP plate"
+            ]
+        },
+        {
+            "motor": "Container motor",
+            "driven_parts": [
+                "Toner container"
+            ]
+        },
+        {
+            "motor": "Toner motor K",
+            "driven_parts": [
+                "Toner supply to developer unit K"
+            ]
+        },
+        {
+            "motor": "Toner motor M",
+            "driven_parts": [
+                "Toner supply to developer unit M"
+            ]
+        },
+        {
+            "motor": "Toner motor C",
+            "driven_parts": [
+                "Toner supply to developer unit C"
+            ]
+        },
+        {
+            "motor": "Toner motor Y",
+            "driven_parts": [
+                "Toner supply to developer unit Y"
+            ]
+        },
+        {
+            "motor": "Drum motor K",
+            "driven_parts": [
+                "Drum unit K"
+            ]
+        },
+        {
+            "motor": "Drum motor CMY",
+            "driven_parts": [
+                "Drum unit CMY"
+            ]
+        },
+        {
+            "motor": "Lift motor 1",
+            "driven_parts": [
+                "Lift plate of the cassette 1"
+            ]
+        },
+        {
+            "motor": "Lift motor 2",
+            "driven_parts": [
+                "Lift plate of the cassette 2"
+            ]
+        },
+        {
+            "motor": "Paper feed motor",
+            "driven_parts": [
+                "Paper feed mechanism"
+            ]
+        },
+        {
+            "motor": "Developer K / Transfer belt motor",
+            "driven_parts": [
+                "Developer unit K",
+                "Primary transfer belt"
+            ]
+        },
+        {
+            "motor": "Developer motor CMY",
+            "driven_parts": [
+                "Developer units CMY"
+            ]
+        },
+        {
+            "motor": "Fuser motor",
+            "driven_parts": [
+                "Fuser section"
+            ]
+        },
+        {
+            "motor": "Fuser pressure release motor",
+            "driven_parts": [
+                "Fuser pressure release mechanism"
+            ]
+        },
+        {
+            "motor": "Waste toner motor",
+            "driven_parts": [
+                "Waste toner mechanism"
+            ]
+        },
+        {
+            "motor": "Exit reversing motor",
+            "driven_parts": [
+                "Exit section"
+            ]
+        },
+        {
+            "motor": "Rear exit motor",
+            "driven_parts": [
+                "Exit section"
+            ]
+        }
+    ],
+    "Others": [
+        {
+            "name": "DU clutch 1",
+            "job_en": "Controlling drive of the duplex section.",
+            "job_ar": "التحكم في تشغيل قسم وحدة الوجهين 1."
+        },
+        {
+            "name": "DU clutch 2",
+            "job_en": "Controlling drive of the duplex section.",
+            "job_ar": "التحكم في تشغيل قسم وحدة الوجهين 2."
+        },
+        {
+            "name": "MP clutch",
+            "job_en": "Control drive of the primary paper feed from the MP tray.",
+            "job_ar": "التحكم في تشغيل تغذية الورق الأولية من صينية التغذية اليدوية."
+        },
+        {
+            "name": "Registration clutch",
+            "job_en": "Control drive of the secondary paper feed from the cassette.",
+            "job_ar": "التحكم في تشغيل تغذية الورق الثانوية من درج الورق."
+        },
+        {
+            "name": "Paper feed clutch 1",
+            "job_en": "Control drive of the primary paper feed from the cassette 1.",
+            "job_ar": "التحكم في تشغيل تغذية الورق الأولية من درج الورق 1."
+        },
+        {
+            "name": "Paper feed clutch 2",
+            "job_en": "Control drive of the primary paper feed from the cassette 2.",
+            "job_ar": "التحكم في تشغيل تغذية الورق الأولية من درج الورق 2."
+        },
+        {
+            "name": "Developer clutch",
+            "job_en": "Control drive of the developer unit (Black).",
+            "job_ar": "التحكم في تشغيل وحدة المظهر (الأسود)."
+        },
+        {
+            "name": "Vertical conveying clutch",
+            "job_en": "Control drive of the conveying section from the MP tray.",
+            "job_ar": "التحكم في تشغيل قسم النقل من صينية التغذية اليدوية."
+        },
+        {
+            "name": "Middle clutch",
+            "job_en": "Control drive of the conveying section.",
+            "job_ar": "التحكم في تشغيل قسم نقل الورق الأوسط."
+        },
+        {
+            "name": "Cleaning solenoid",
+            "job_en": "Cleaning the ID sensor.",
+            "job_ar": "تنظيف حساس الهوية (ID)."
+        },
+        {
+            "name": "Container solenoid K",
+            "job_en": "Releasing the container lock (Black).",
+            "job_ar": "تحرير قفل حاوية الحبر (الأسود)."
+        },
+        {
+            "name": "Container solenoid M",
+            "job_en": "Releasing the container lock (Magenta).",
+            "job_ar": "تحرير قفل حاوية الحبر (الأرجواني)."
+        },
+        {
+            "name": "Container solenoid C",
+            "job_en": "Releasing the container lock (Cyan).",
+            "job_ar": "تحرير قفل حاوية الحبر (السيان)."
+        },
+        {
+            "name": "Container solenoid Y",
+            "job_en": "Releasing the container lock (Yellow).",
+            "job_ar": "تحرير قفل حاوية الحبر (الأصفر)."
+        },
+        {
+            "name": "Lower exit solenoid",
+            "job_en": "Operation of the feedshift guide.",
+            "job_ar": "تشغيل موجه تغيير مسار التغذية السفلي."
+        },
+        {
+            "name": "Upper exit solenoid",
+            "job_en": "Operation of the feedshift guide.",
+            "job_ar": "تشغيل موجه تغيير مسار التغذية العلوي."
+        },
+        {
+            "name": "HDD",
+            "job_en": "Hard disk (HDD) storage device.",
+            "job_ar": "جهاز تخزين القرص الصلب (HDD)."
+        },
+        {
+            "name": "LCD",
+            "job_en": "Displaying the operation screen.",
+            "job_ar": "عرض شاشة التشغيل."
+        },
+        {
+            "name": "Eraser K",
+            "job_en": "Removing the remaining electric charge on the drum (Black).",
+            "job_ar": "إزالة الشحنة الكهربائية المتبقية على الأسطوانة (الأسود)."
+        },
+        {
+            "name": "Eraser M",
+            "job_en": "Removing the remaining electric charge on the drum (Magenta).",
+            "job_ar": "إزالة الشحنة الكهربائية المتبقية على الأسطوانة (الأرجواني)."
+        },
+        {
+            "name": "Eraser C",
+            "job_en": "Removing the remaining electric charge on the drum (Cyan).",
+            "job_ar": "إزالة الشحنة الكهربائية المتبقية على الأسطوانة (السيان)."
+        },
+        {
+            "name": "Eraser Y",
+            "job_en": "Removing the remaining electric charge on the drum (Yellow).",
+            "job_ar": "إزالة الشحنة الكهربائية المتبقية على الأسطوانة (الأصفر)."
+        },
+        {
+            "name": "Fuser thermostat",
+            "job_en": "Prevention of the abnormal IH belt heating.",
+            "job_ar": "منع الارتفاع غير الطبيعي لحرارة حزام التسخين الحثي (IH)."
+        },
+        {
+            "name": "Speaker",
+            "job_en": "Generating the panel touch sound and error sound.",
+            "job_ar": "توليد صوت لمس اللوحة وصوت الخطأ."
+        },
+        {
+            "name": "Touch Panel",
+            "job_en": "Converting the operation position data.",
+            "job_ar": "تحويل بيانات موضع التشغيل باللمس."
+        },
+        {
+            "name": "Drum heater K",
+            "job_en": "Prevention of the drum surface condensation (Black).",
+            "job_ar": "منع تكثف الرطوبة على سطح الأسطوانة (الأسود)."
+        },
+        {
+            "name": "Drum heater M",
+            "job_en": "Prevention of the drum surface condensation (Magenta).",
+            "job_ar": "منع تكثف الرطوبة على سطح الأسطوانة (الأرجواني)."
+        },
+        {
+            "name": "Drum heater C",
+            "job_en": "Prevention of the drum surface condensation (Cyan).",
+            "job_ar": "منع تكثف الرطوبة على سطح الأسطوانة (السيان)."
+        },
+        {
+            "name": "Drum heater Y",
+            "job_en": "Prevention of the drum surface condensation (Yellow).",
+            "job_ar": "منع تكثف الرطوبة على سطح الأسطوانة (الأصفر)."
+        }
+    ]
+}

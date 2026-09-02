@@ -1,0 +1,100 @@
+[
+  {
+    "pwb_name": "Engine",
+    "socket": "YC6",
+    "connection_place": "Feed Drive PWB",
+    "problem_appearance": "(1) C0361 (خطأ اتصال Engine CPU-IO ASIC)\n(2) لا يحدث حشر أو خطأ صيانة، ولكن يظهر خطأ C7601 (خطأ حساس ID)\n(3) لا يحدث حشر أو خطأ صيانة، ولكن يحدث تشغيل غير طبيعي",
+    "signs": "1. انقطاع خط الاتصال مع الـ ASIC.\n2. انقطاع خط إشارة حساس ID بالجهة الأمامية للماكينة.\n3. عدم تغذية الطاقة لحساس كشف فتح/إغلاق الدرج."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC40",
+    "connection_place": "Feed Image PWB",
+    "problem_appearance": "(1) C0362 (خطأ اتصال Engine CPU-IO ASIC) و C6770 (خطأ طاقة سخان IH المنخفضة)\n(2) C6770 (خطأ طاقة سخان IH المنخفضة)\n(3) تشغيل غير طبيعي بدون حشر أو أكواد صيانة",
+    "signs": "1. انقطاع خط الاتصال مع الـ ASIC.\n2. انقطاع خط إشارة التحكم في طاقة سخان IH.\n3. انقطاع خط طاقة سخان الرامك (تعطيله)، وانقطاع طاقة الممحاة (Erased) مما يسبب انخفاض الكثافة لعدم القدرة على تفريغ الرامك."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC42",
+    "connection_place": "Feed Image PWB",
+    "problem_appearance": "(1) C7901 (خطأ EEPROM رامك K)\n(2) C2760 (خطأ موتور حزام النقل)\n(3) C2203 (خطأ موتور الرامك للألوان)",
+    "signs": "1. انقطاع خط الاتصال مع الـ EEPROM الخاصة بالوحدة.\n2. انقطاع إشارة تحكم موتور حزام النقل.\n3. انقطاع إشارة تحكم موتور الرامك."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC9",
+    "connection_place": "APC PWB",
+    "problem_appearance": "(1) C4001 عند الطباعة (خطأ تزامن موتور المضلع Polygon motor)\n(2) صورة غير طبيعية (تأثر لون الماجنتا M)\n(3) صورة غير طبيعية (تأثر لون الأسود K)",
+    "signs": "1. انقطاع إشارة تحكم موتور المضلع.\n2. انقطاع إشارة صورة الماجنتا.\n3. انقطاع خط إشارة صورة الأسود K."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC27",
+    "connection_place": "APC PWB, Lower power PWB, Waste toner motor & Weight detection sensor",
+    "problem_appearance": "(1) C0980 (اكتشاف انقطاع طاقة 24 فولت)\n(2) C0980 (اكتشاف انقطاع طاقة 24 فولت)\n(3) لا يحدث حشر أو خطأ صيانة",
+    "signs": "1 & 2. انقطاع إشارة الإذن بإخراج طاقة 24V لبوردة الجهد المنخفض.\n3. تشغيل جزئي بدون كود خطأ ظاهر."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC16",
+    "connection_place": "DP, Sensor, Drive motor",
+    "problem_appearance": "(1) C3100 (خطأ عربة الماسحة Carriage error)\n(2) C3100 (خطأ عربة الماسحة)\n(3) C3100 (خطأ عربة الماسحة)",
+    "signs": "1. انقطاع إشارة تحكم موتور إدارة العربة.\n2. انقطاع الطاقة عن حساس موضع العربة.\n3. انقطاع إشارة تحكم موتور العربة."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC36",
+    "connection_place": "CCD PWB",
+    "problem_appearance": "(1) C3800 (خطأ AFE)\n(2) لا يحدث حشر أو خطأ صيانة\n(3) لا يحدث حشر أو خطأ صيانة",
+    "signs": "1. انقطاع خط الاتصال بين المعالج وdevice الـ AFE."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC34",
+    "connection_place": "Transfer High Voltage PWB",
+    "problem_appearance": "(1) صورة باهتة بدون نقل (خطأ الجهد العالي للنقل)\n(3) مشكلة في تنظيف حزام النقل",
+    "signs": "1. انقطاع إشارة تحكم الجهد العالي للنقل.\n3. انقطاع إشارة الجهد العالي لتنظيف حزام النقل."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC33",
+    "connection_place": "Main High Voltage PWB",
+    "problem_appearance": "(1) طباعة صفحة بيضاء (Blank pages) لانقطاع جهد الشحن والتطوير\n(3) باهتة لقطع إشارة التحكم",
+    "signs": "1 & 3. انقطاع إشارة تحكم الشحن الرئيسي والتطوير والجزء عالي الجهد."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC1",
+    "connection_place": "Lower voltage power Source PWB",
+    "problem_appearance": "(1) خطأ نظام F040",
+    "signs": "انقطاع خط الطاقة الواصل لبوردة المحرك (Engine PWB) وعدم إقلاعها."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC29",
+    "connection_place": "IH PWB",
+    "problem_appearance": "(1) C6950 (خطأ اتصال IH CPU)\n(2) C6950 (خطأ اتصال IH CPU)\n(3) C6950 (خطأ اتصال IH CPU)",
+    "signs": "1 & 2. عدم إمداد الطاقة لبوردة IH PWB.\n3. انقطاع خط التأريض (Ground) وفشل الاتصال."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC43",
+    "connection_place": "Main PWB",
+    "problem_appearance": "(1) خطأ نظام F040\n(3) عدم إضاءة لمبة فاصل المهام (Job separator LED) عند خروج الورق إليه",
+    "signs": "1. انقطاع خط اتصال ASIC-CPU.\n3. انقطاع إشارة التحكم في ليد فاصل المهام."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC35",
+    "connection_place": "Main PWB",
+    "problem_appearance": "(1 إلى 3) خطأ F186 أثناء الطباعة مع استمرار شاشة فحص النسخ دون بدء المهمة",
+    "signs": "تفصيل أعطال دبابيس FFC لـ YC35 موجودة بالجدول الفرعي (مثل صور ملونة صلبة أو خطوط رأسية عند انقطاع دبابيس معينة مثل 11, 18, 20...). نسخ الفحص يظهر ألوان صلبة كاملة حسب رقم البن المقطوع."
+  },
+  {
+    "pwb_name": "Engine",
+    "socket": "YC38",
+    "connection_place": "Temperature and humidity sensor, Power source fan motor",
+    "problem_appearance": "(1) C7800 (كسر سلك الثرمستور الخارجي)",
+    "signs": "انقطاع إشارة حساس الحرارة والرطوبة الخارجي وثبات القراءة على 23 درجة مئوية."
+  }
+]

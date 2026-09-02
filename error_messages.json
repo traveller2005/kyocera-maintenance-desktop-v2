@@ -1,0 +1,275 @@
+[
+  {
+    "message_ar": "يظهر تنبيه: فحص وحدة تلقيم المستندات (Check the document processor)",
+    "message_en": "Check the document processor appears",
+    "causes": [
+      "حساس الفتح والإغلاق لوحدة تلقيم المستندات (DP opening/closing sensor) لا يعمل بشكل صحيح.",
+      "مشكلة في توصيلات الكونكتورات بين وحدة الـ DP والماكينة."
+    ],
+    "solutions": [
+      "1. قم بتنفيذ الأمر (U244 [Open]) لفحص استجابة حساس الفتح والإغلاق، ثم أعد تركيبه أو استبدله.",
+      "2. نظف وأعد توصيل الكونكتورات بين (DP opening/closing sensor) وبوردة (DP PWB) وبوردة (Engine PWB).",
+      "3. في حال استمرار المشكلة، استبدل بوردة (DP PWB) أو وحدة الـ (DP) بالكامل."
+    ]
+  },
+  {
+    "message_ar": "يظهر تنبيه: حدث خطأ في الدرج 1 أو 2 (The error occurred in the cassette 1, 2)",
+    "message_en": "The error occurred in the cassette 1, 2 is displayed",
+    "causes": [
+      "وحدة سحب الورق الأساسية غير مدخلة بالكامل في مسارها.",
+      "صفيحة الرفع (Lift plate) لا ترتفع أو توجد إعاقة في مسارها.",
+      "موتور الرفع الأول أو الثاني (Lift motor 1, 2) تالف أو به مشكلة في التوصيلات الكهربائية."
+    ],
+    "solutions": [
+      "1. اسحب وحدة سحب الورق الأساسية للدرج المعني وأعد إدخالها بالكامل والتأكد من إغلاقها.",
+      "2. نظف وأعد توصيل كونكتورات موتور الرفع (Lift motor 1, 2) الموصولة ببوردة (Feed drive PWB) وبوردة (Engine PWB).",
+      "3. قم بتنفيذ البرنامج (U906)، وإذا لم تتحسن المشكلة استبدل موتور الرفع أو بوردة (Feed drive PWB)."
+    ]
+  },
+  {
+    "message_ar": "يظهر تنبيه: حدث خطأ في الدرج 3 أو 4 (The error occurred in the cassette 3, 4)",
+    "message_en": "The error occurred in the cassette 3, 4 is displayed",
+    "causes": [
+      "عدم اكتمال إدخال وحدة السحب الأساسية الخاصة بوحدة التغذية الإضافية (PF) أو وحدة السعة الكبيرة (LCF).",
+      "عطل في صفيحة الرفع أو موتور الرفع الخاص بوحدة الـ (PF)."
+    ],
+    "solutions": [
+      "1. اسحب وحدة السحب الأساسية للـ (PF) أو (LCF) وأعد إدخالها بالكامل.",
+      "2. افحص صفيحة الرفع وموتور الرفع الخاص بوحدة الـ (PF) والتوصيلات المتجهة إلى بوردة (PF PWB).",
+      "3. قم بتنفيذ البرنامج (U906)، أو استبدل موتور الرفع أو بوردة (PF PWB)."
+    ]
+  },
+  {
+    "message_ar": "تظهر رسالة (الباب مفتوح) بعد إغلاق الغطاء الأمامي (Cover open message after closing front cover)",
+    "message_en": "The cover open message appears after closing the front cover",
+    "causes": [
+      "عدم تركيب الغطاء الأمامي بالشكل الصحيح مما يمنع تعشيق الحساس.",
+      "تلف حساس الغطاء الأمامي (Front cover sensor)."
+    ],
+    "solutions": [
+      "1. أعد تركيب الغطاء الأمامي لضمان تفعيله للحساس الميكانيكي بشكل سليم.",
+      "2. نظف وأعد توصيل كونكتورات الحساس المتجهة إلى بوردة (Feed image PWB) وبوردة (Engine PWB).",
+      "3. استبدل حساس الغطاء الأمامي إذا لزم الأمر."
+    ]
+  },
+  {
+    "message_ar": "تظهر رسالة (الباب مفتوح) بعد إغلاق الغطاء الأيمن أو غطاء الصيانة (Cover open message after closing right cover)",
+    "message_en": "The cover open message appears after closing the right cover or maintenance front cover",
+    "causes": [
+      "لوحة مفتاح الغطاء الأيمن عالقة بذراع الغطاء ولا تتحرك بحرية.",
+      "مفتاح الغطاء الأيمن (Right cover switch) تالف أو أطرافه غير متصلة."
+    ],
+    "solutions": [
+      "1. افتح وأغلق الغطاء الأيمن عدة مرات لاختبار الحركة، أو استبدل لوحة حامل مفتاح الغطاء (302ND0432_) وذراع الفتح والإغلاق (302ND2963_).",
+      "2. افحص وصحح محاذاة الأغطية الخارجية لضمان الغلق المحكم.",
+      "3. نظف وأعد توصيل كابل مفتاح الغطاء الأيمن الموصول بـ (Feed drive PWB) و (Engine PWB) واستبدل الحساس عند التلف."
+    ]
+  },
+  {
+    "message_ar": "تظهر رسالة إضافة ورق رغم وجود ورق في الدرج اليدوي (Add paper message on MP tray)",
+    "message_en": "The add paper message appears while the paper is loaded on the MP tray",
+    "causes": [
+      "تشوه المشغل الميكانيكي (Actuator) الخاص بحساس ورق الدرج اليدوي (MP paper sensor).",
+      "تلف حساس الورق نفسه أو وجود خلل بتوصيلات بوردة (Feed drive PWB)."
+    ],
+    "solutions": [
+      "1. نظف وأعد توصيل كونكتورات حساس ورق الدرج اليدوي (MP paper sensor) المارة بـ (Relay connector) وصولاً إلى بوردة (Feed drive PWB) و (Engine PWB).",
+      "2. افحص واستبدل مشغل حساس الورق (Actuator) إذا كان به اعوجاج أو تشوه.",
+      "3. أعد تركيب أو استبدل حساس ورق الدرج اليدوي (MP paper sensor)."
+    ]
+  },
+  {
+    "message_ar": "تظهر رسالة (صندوق مخلفات الحبر ممتلئ) بشكل خاطئ (Waste toner box is full is wrongly displayed)",
+    "message_en": "The message [Waste toner box is full] is wrongly displayed",
+    "causes": [
+      "مشكلة في حرية حركة مشغل كشف الوزن (Weight detection actuator).",
+      "التصاق حبر متصلب على سطح حساس امتلاء مخلفات الحبر (النوع الكهرضغطي Piezoelectric sensor).",
+      "انسداد في مسار أو وصلة دخول صندوق مخلفات الحبر."
+    ],
+    "solutions": [
+      "1. قم بترقية النسخة البرمجية (Firmware) للماكينة لأحدث إصدار.",
+      "2. افحص وأصلح موضع مشغل كشف الوزن ليعود بسلاسة لموضعه الأصلي.",
+      "3. أخرج صندوق العادم وأعد إدخاله، وقم بتنظيف سطح حساس الامتلاء وجزء الوصلة المرتبطة بوحدة الإدارة الرئيسية.",
+      "4. قم بقياس جهد خرج حساس الامتلاء (يجب أن يكون 0 فولت عند عدم الامتلاء، و 3.3 فولت عند الامتلاء). استبدل الحساس إذا كانت قراءته 3.3 فولت والصندوق غير ممتلئ."
+    ]
+  },
+  {
+    "message_ar": "يظهر تنبيه خاطئ: أزل الأصل من وحدة تلقيم المستندات (Remove the original from DP)",
+    "message_en": "When DP is used, [Remove the original from document processor] is wrongly displayed",
+    "causes": [
+      "حدوث قصر كهربائي (Short circuit) في سلك حساس وجود الأصل للـ (DP original sensor) مما يجعله يقرأ وضع التشغيل دائماً."
+    ],
+    "solutions": [
+      "1. افحص واستبدل سلك توصيل حساس الأصل للـ (DP) في حال اكتشاف قصر أو قطع به.",
+      "2. استبدل حساس وجود الأصل للـ (DP original sensor).",
+      "3. استبدل بوردة (DP PWB) إذا استمرت المشكلة."
+    ]
+  },
+  {
+    "message_ar": "عدم سحب الأصل وظهور رسالة (استبدل جميع الأصول) (Replace all originals in DP)",
+    "message_en": "When DP is used, document no-feed occurs and [Replace all originals.] is displayed",
+    "causes": [
+      "تلف أو طي الحافة الأمامية للأصل وتعلقها بوسادة غطاء بكرة التراجع وفصل الورق (DP retard pulley cover)."
+    ],
+    "solutions": [
+      "1. أعد تثبيت الوسادة الخاصة بغطاء بكرة فصل الـ (DP) بالضغط عليها لإعادتها لمكانها.",
+      "2. استبدل غطاء بكرة الفصل بالكامل (بما في ذلك الوسادة المدمجة) لتأمين مسار الورق."
+    ]
+  },
+  {
+    "message_ar": "بقاء رسالة (جهاز الشبكة يعمل) معلقة عند تشغيل الطاقة (Network device is running)",
+    "message_en": "When turning on the power, the display [Network device is running] does not disappear",
+    "causes": [
+      "تعليق إحدى البتات (Bit hang) في ذاكرة الفلاش (Flash memory) الخاصة بالبوردة الرئيسية."
+    ],
+    "solutions": [
+      "1. أوقف تشغيل الطاقة الرئيسية والفرعية، وانتظر 5 ثوانٍ، ثم أعد التشغيل.",
+      "2. قم بتنفيذ الأمر (U021) لتهيئة ومسح الذاكرة الاحتياطية (Backup RAM).",
+      "3. استبدل البوردة الرئيسية (Main PWB) في حال تلف شريحة الذاكرة."
+    ]
+  },
+  {
+    "message_ar": "تظهر رسالة (قم بتركيب صندوق مخلفات الحبر) رغم أنه مركب (Install the waste toner box)",
+    "message_en": "The waste toner box is installed, but 'Install the waste toner box' is displayed",
+    "causes": [
+      "تشوه أو تآكل إسفنجة اليوريثان في قسم مصراع (Shutter) صندوق العادم، مما يقلل قوة التثبيت ويجعل الصندوق ينزلق للخارج مع اهتزاز التشغيل.",
+      "مشكلة في حركة مشغل كشف الوزن أو انفكاك سوستة الإرجاع (Return spring)."
+    ],
+    "solutions": [
+      "1. استبدل قسم المصراع للماكينة بقطعة الغيار المعدلة (PARTS WTB SHUTTER ASSY SP - 302ND9496_).",
+      "2. استبدل صندوق مخلفات الحبر بنسخة الخدمة الحقلية الجديدة (WT-8500).",
+      "3. افحص وصحح حركة مشغل كشف الوزن وأعد تركيب السوستة بشكل صحيح، أو استبدل وحدة صندوق مخلفات الحبر بالكامل مع تنفيذ برنامج المعايرة (U155 [Calibration])."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 1020: خطأ أثناء فحص ذاكرة بوردة الجسر (Bridge Board memory check)",
+    "message_en": "Error 1020: Error occurs during Bridge Board memory check.",
+    "causes": [
+      "عطل في مكونات أو معالج بوردة الجسر (Bridge Board)."
+    ],
+    "solutions": [
+      "1. قم باستبدال بوردة الجسر (Bridge Board) بأخرى سليمة."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 1030: انتهاء الوقت لعدم استقبال إشارة جاهزية نظام الـ (Fiery)",
+    "message_en": "Error 1030: Timeout for Fiery Ready signal not received. (If error display does not disappear after 3 minutes)",
+    "causes": [
+      "نظام الطباعة غير متصل بالطاقة أو لم يقلع.",
+      "انفصال أو ارتخاء كابل نقل البيانات (DVI cable) بين وحدة تحكم (Fiery) والماكينة (MFP)."
+    ],
+    "solutions": [
+      "1. افحص كابل الطاقة الموصول بوحدة الطباعة واستبدله إن لزم الأمر.",
+      "2. أعد إدخال أو استبدل كابل الـ (DVI) للتأكد من نقل الإشارة."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 1031: فشل استقبال بيانات الفيديو من الـ (Fiery) أو فشل الـ (IP Exchange)",
+    "message_en": "Error 1031: Receiving VIDEO from Fiery fails. (IP Exchange failure)",
+    "causes": [
+      "تلف أو انفصال كابل الـ (DVI) بين نظام (Fiery) والماكينة.",
+      "عطل داخلي في بوردة الجسر (Bridge board)."
+    ],
+    "solutions": [
+      "1. أعد توصيل أو استبدل كابل الـ (DVI).",
+      "2. قم باستبدال بوردة الجسر (Bridge Board)."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 1040: فشل اتصال الشبكة المحلية المباشر (LINKLOCAL connection fails)",
+    "message_en": "Error 1040: LINKLOCAL connection fails.",
+    "causes": [
+      "انفصال كابل الشبكة (Network cable) المباشر بين وحدة التحكم (Fiery) والماكينة.",
+      "فشل أو إعدادات شبكة غير متطابقة."
+    ],
+    "solutions": [
+      "1. أعد توصيل كابل الشبكة بإحكام أو استبدله.",
+      "2. تحقق من إعدادات الشبكة وتأكد من تفعيل بروتوكولات (IPv6: ON, HTTP: ON, Enhanced WSD: ON)."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 2000: عدم تطابق معرف المنتج مع نظام (Fiery)",
+    "message_en": "Error 2000: Mismatch of Product ID from Fiery.",
+    "causes": [
+      "تم تركيب وحدة تحكم (Fiery Print Controller) غير مدعومة أو غير متوافقة مع موديل الماكينة."
+    ],
+    "solutions": [
+      "1. قم بتركيب وحدة تحكم (Fiery) مدعومة وتأكد من استخدام التوافق الصحيح للإصدارات."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 2010: عدم تطابق إصدار شريحة (Comet FPGA)",
+    "message_en": "Error 2010: Comet FPGA version mismatch.",
+    "causes": [
+      "تم تركيب بوردة جسر (Bridge Board) غير مدعومة أو ذات إصدار فيرموير قديم."
+    ],
+    "solutions": [
+      "1. قم باستبدال بوردة الجسر (Bridge Board) بأخرى مطابقة للإصدار الحالي."
+    ]
+  },
+  {
+    "message_ar": "يظهر الكود 3000: انتهاء وقت إقلاع خادم (ERPD) الخاص ببروتوكول الـ (RIP) الخارجي",
+    "message_en": "Error 3000: Timeout of ERPD Server boot-up of External RIP Protocol.",
+    "causes": [
+      "وجود بيانات تالفة أثناء عملية تبادل الـ (IP Exchange)."
+    ],
+    "solutions": [
+      "1. أوقف تشغيل الماكينة ثم أعد تشغيلها مرة أخرى.",
+      "2. إذا استمر العطل، استبدل بوردة الجسر (Bridge Board).",
+      "3. استبدل البوردة الرئيسية (Main Board).",
+      "4. كحل أخير، استبدل وحدة تحكم الطباعة (Fiery Print Controller) بالكامل."
+    ]
+  },
+  {
+    "message_ar": "نظام (Fiery) لا يظهر على شاشة الماكينة (MFP panel)",
+    "message_en": "Fiery is not shown on the MFP panel",
+    "causes": [
+      "سوء اتصال، أو ارتخاء، أو تلف في كابل الـ (DVI)، أو كابل الشبكة، أو الضفيرة (Harness).",
+      "عطل في بوردة الجسر أو البوردة الرئيسية."
+    ],
+    "solutions": [
+      "1. أعد توصيل أو استبدل كابل الـ (DVI) وكابل الشبكة.",
+      "2. راجع إعدادات الشبكة في قائمة النظام وتأكد من تفعيل ([TCP/IP Setting] ON) و (DHCP/AutoIP ON) و (HTTP/Enhanced WSD ON).",
+      "3. استبدل بوردة الجسر، أو البوردة الرئيسية، أو بوردة نظام الطباعة."
+    ]
+  },
+  {
+    "message_ar": "نظام (Fiery) غير مكتشف بواسطة برنامج (Command Work Station)",
+    "message_en": "Fiery is not detectable with Command Work Station",
+    "causes": [
+      "خطأ في اتصال الشبكة أو تلف في الضفيرة الداخلية.",
+      "ارتخاء في توصيل كابلات الـ (DVI) أو الشبكة أو فشل في الأجهزة."
+    ],
+    "solutions": [
+      "1. أعد توصيل كابل الـ (DVI) وكابل الشبكة أو استبدلهما.",
+      "2. تحقق من إعدادات الشبكة ومنافذ الاتصال على الماكينة وعلى جهاز الكمبيوتر (PC).",
+      "3. استبدل بوردة الجسر، أو البوردة الرئيسية، أو نظام الطباعة."
+    ]
+  },
+  {
+    "message_ar": "الطباعة غير ممكنة عبر برنامج (Command Work Station)",
+    "message_en": "Printing is not possible with Command Work Station",
+    "causes": [
+      "فشل في تركيب أو تثبيت بوردة نظام الطباعة (Printing system).",
+      "بوردة الجسر أو البوردة الرئيسية تالفة."
+    ],
+    "solutions": [
+      "1. أعد فحص تثبيت مكونات نظام الطباعة.",
+      "2. استبدل بوردة الجسر، أو البوردة الرئيسية، أو بوردة نظام الطباعة."
+    ]
+  },
+  {
+    "message_ar": "حدوث تشوه أو خلل في الصورة عند الطباعة عبر (Command Work Station)",
+    "message_en": "An abnormal printing occurs when printing from Command Work Station",
+    "causes": [
+      "فشل في توصيل الضفيرة (Harness) بين البوردة الرئيسية وبوردة الجسر.",
+      "فشل في إدخال بيانات الصورة إلى وحدة المعالجة.",
+      "كابل تالف، أو سوء اتصال، أو خطأ في تركيب بوردة المحرك (Engine board)."
+    ],
+    "solutions": [
+      "1. أعد تركيب ضفيرة الكابلات بين البوردة الرئيسية وبوردة الجسر بحرص، أو استبدلها.",
+      "2. افحص استقرار بوردة المحرك (Engine board) وتأكد من تركيبها الصحيح.",
+      "3. في حالة استمرار التشوه، استبدل بوردة الجسر، أو بوردة المحرك، أو البوردة الرئيسية، أو نظام الطباعة."
+    ]
+  }
+]
