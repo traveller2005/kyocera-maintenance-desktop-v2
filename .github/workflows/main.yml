@@ -8,8 +8,8 @@ on:
 
 jobs:
   build-windows7-exe:
-    # استخدام أقدم سيرفر ويندوز متاح في جيتهاب لضمان أقصى توافقية مع الأنظمة القديمة
-    runs-on: runs-on: windows-latest
+    # استخدام أحدث سيرفر متاح لتسريع البناء (التوافق مع ويندوز 7 يتم عبر إصدار بايثون وليس السيرفر)
+    runs-on: windows-latest 
 
     steps:
     - name: 📥 Checkout Repository
@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.8' 
-        architecture: 'x64' # إذا كانت أجهزة المهندسين لديك 32-بت، قم بتغييرها إلى 'x86'
+        architecture: 'x64' # يعمل على أنظمة 64-بت (يمكنك جعلها x86 إذا كان المهندسون يستخدمون 32-بت)
 
     - name: 📦 Install Dependencies
       run: |
