@@ -891,7 +891,7 @@ class KyoceraDeepEngine:
         if not found: self.search_result.insert("end", "❌ لم يتم العثور على نتائج مطابقة.\n")
 
     def _print_search_res(self, category, title, desc, details):
-        self.search_result.insert("end", f"{"="*60}\n{category}: {title}\n{"-"*60}\n📌 الوصف: {desc}\n\n🛠️ التفاصيل:\n{details}\n\n")
+       self.search_result.insert("end", f"{'='*60}\n{category}: {title}\n{'-'*60}\n📌 الوصف: {desc}\n\n🛠️ التفاصيل:\n{details}\n\n")
     # =====================================================
     # 8. U-Codes Tab
     # =====================================================
