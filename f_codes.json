@@ -1,0 +1,575 @@
+[
+  {
+    "error_code": "F000",
+    "name": "خطأ اتصال بين الوحدة الرئيسية ووحدة المعالجة المركزية CPU (Communication error between the main unit and CPU)",
+    "description": "خطأ اتصال بين الوحدة الرئيسية ووحدة المعالجة المركزية CPU (Communication error between the main unit and CPU)",
+    "causes": [
+      "تعذر اكتشاف لوحة التشغيل (Panel) نظراً لعدم توفر الاتصال بين البوردة الرئيسية (Main PWB) وبوردة لوحة التشغيل الرئيسية (Operation panel main PWB)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل مفتاح الطاقة الرئيسي ومفتاح الطاقة (الانتظار لمدة 5 ثوانٍ قبل إعادة التشغيل).",
+      "تنظيف أطراف الكابلات وتوصيلات كابل الـ SATA بين Main PWB و Operation panel main PWB (YC12 - YC5) وإعادة توصيلها واستبدال التالف.",
+      "تنفيذ الأمر U021 لتهيئة بيانات الذاكرة الاحتياطية (Backup RAM).",
+      "استبدل البوردة الرئيسية (Main PWB).",
+      "استبدل بوردة لوحة التشغيل الرئيسية (Operation panel main PWB)."
+    ]
+  },
+  {
+    "error_code": "F010",
+    "name": "خطأ قراءة البرنامج من الـ SSD (Program read error (SSD))",
+    "description": "خطأ قراءة البرنامج من الـ SSD (Program read error (SSD))",
+    "causes": [
+      "تم اكتشاف بيانات 2bit مشوهة أثناء قراءة البرنامج من ذاكرة الفلاش (Flash memory) أو وحدات التخزين."
+    ],
+    "solutions": [
+      "(عند ظهور الخطأ بعد استبدال الـ SSD) إدخال ذاكرة فلاش USB تحتوي على جميع الفيرمويرات المطلوبة للطراز في الماكينة وتشغيل الطاقة الرئيسية (Firmware Update).",
+      "التأكد من تثبيت SSD يطابق مواصفات سعة الذاكرة المطلوبة.",
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية بعد 5 ثوانٍ.",
+      "فحص وتنظيف أطراف الـ SSD وإعادة توصيله بإحكام.",
+      "تنظيف توصيلات وكابلات الـ SATA بين Main PWB ولوحة التشغيل وإعادة توصيلها.",
+      "تنفيذ الأمر U021 لتهيئة بيانات الاحتياط.",
+      "تنفيذ الأمر U026 لعمل نسخة احتياطية لبيانات الـ SSD، ثم استبدال الـ SSD وتشغيل الجهاز مع وجود فلاشة الـ USB الخاصة بالفيرموير."
+    ]
+  },
+  {
+    "error_code": "F020",
+    "name": "خطأ ذاكرة النظام - قراءة/كتابة RAM الخاصة بـ CPU (System memory error)",
+    "description": "خطأ ذاكرة النظام - قراءة/كتابة RAM الخاصة بـ CPU (System memory error)",
+    "causes": [
+      "يظهر الخطأ أثناء فحص القراءة والكتابة لـ RAM الخاصة بوحدة المعالجة المركزية (CPU) عند بدء تشغيل الوحدة الرئيسية."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل مفتاح الطاقة الرئيسي ومفتاح الطاقة (انتظار 5 ثوانٍ).",
+      "تنفيذ الأمر U021 لتهيئة بيانات الذاكرة الاحتياطية (Backup RAM).",
+      "تنظيف أطراف الكونكتورات وكابلات الـ FFC على البوردة الرئيسية (Main PWB) وإعادة توصيلها، وإصلاح أو استبدال الأسلاك أو الـ FFC التالفة، أو استبدال البوردة الرئيسية."
+    ]
+  },
+  {
+    "error_code": "F021",
+    "name": "خطأ ذاكرة النظام - قراءة/كتابة ASIC للبوردة الرئيسية (System memory error)",
+    "description": "خطأ ذاكرة النظام - قراءة/كتابة ASIC للبوردة الرئيسية (System memory error)",
+    "causes": [
+      "حدث خطأ عند التحقق من القراءة والكتابة لـ RAM الخاصة بمعالج ASIC للوحة الرئيسية (Main PWB ASIC) عند بدء التشغيل."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية بعد 5 ثوانٍ.",
+      "تنفيذ الأمر U021 لتهيئة بيانات Backup RAM.",
+      "تنظيف أطراف الكونكتورات ووصولات الـ FFC على البوردة الرئيسية وإعادة توصيلها واستبدال التالف، أو استبدل البوردة الرئيسية."
+    ]
+  },
+  {
+    "error_code": "F022",
+    "name": "خطأ ذاكرة النظام - قراءة/كتابة ASIC لبوردة ترحيل الـ DP (System memory error)",
+    "description": "خطأ ذاكرة النظام - قراءة/كتابة ASIC لبوردة ترحيل الـ DP (System memory error)",
+    "causes": [
+      "حدث خطأ عند التحقق من القراءة والكتابة لـ RAM الخاصة بمعالج ASIC لبوردة ترحيل الـ DP (DP relay PWB ASIC) عند بدء التشغيل."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية.",
+      "تنفيذ الأمر U021 لتهيئة بيانات الذاكرة الاحتياطية.",
+      "إعادة تركيب بوردة ترحيل الـ DP (DP relay PWB) وإحكام ربط المسامير، وإن لم يتم الإصلاح استبدل بوردة DP relay PWB."
+    ]
+  },
+  {
+    "error_code": "F040",
+    "name": "خطأ اتصال بين الوحدة الرئيسية والـ CPU - بين الكنترولر ومحرك الطباعة (Communication error between main unit and CPU)",
+    "description": "خطأ اتصال بين الوحدة الرئيسية والـ CPU - بين الكنترولر ومحرك الطباعة (Communication error between main unit and CPU)",
+    "causes": [
+      "يوجد خطأ في الاتصال بين البوردة الرئيسية (Main PWB) وبوردة المحرك (Engine PWB)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية بعد 5 ثوانٍ.",
+      "تنظيف أطراف توصيل الأسلاك والكونكتورات التالية وإعادة توصيلها (Engine PWB (YC43) - Main PWB (YC63) / Engine PWB - Low voltage PWB (YC63)) واستبدال التالف.",
+      "استبدل البوردة الرئيسية (Main PWB).",
+      "استبدل بوردة المحرك (Engine PWB).",
+      "استبدل بوردة الجهد المنخفض (Low voltage PWB) في حال عدم خروج تيار 5V و 24V منها."
+    ]
+  },
+  {
+    "error_code": "F041",
+    "name": "خطأ اتصال بين البوردة الرئيسية ومحرك الماسحة (Communication error between main PWB and scanner engine)",
+    "description": "خطأ اتصال بين البوردة الرئيسية ومحرك الماسحة (Communication error between main PWB and scanner engine)",
+    "causes": [
+      "يوجد خطأ في الاتصال بين البوردة الرئيسية وبوردة المحرك (خاص بالماسحة Scanner)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية.",
+      "إعادة توصيل أسلاك الكونكتورات وكابلات الـ FFC بين (Main PWB - Engine PWB) وتنظيف أطرافها واستبدال التالف أو المكسور منها.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل بوردة المحرك (Engine PWB)."
+    ]
+  },
+  {
+    "error_code": "F050",
+    "name": "خطأ البرنامج الرئيسي للمحرك (Engine main program error)",
+    "description": "خطأ البرنامج الرئيسي للمحرك (Engine main program error)",
+    "causes": [
+      "تعذر بدء تشغيل برنامج المحرك (Engine program)."
+    ],
+    "solutions": [
+      "ترقية فيرموير المحرك لأحدث إصدار (Firmware Update).",
+      "إيقاف وإعادة تشغيل الطاقة بعد 5 ثوانٍ (خطأ في فحص المجموع ROM للمحرك).",
+      "إعادة تركيب الـ EEPROM بإحكام.",
+      "تنظيف أطراف الكونكتورات والكابلات على بوردة المحرك وإعادة توصيلها واستبدال التالف منها أو استبدال بوردة Engine PWB بالكامل."
+    ]
+  },
+  {
+    "error_code": "F051",
+    "name": "خطأ برنامج محرك الماسحة (Scanner engine program error)",
+    "description": "خطأ برنامج محرك الماسحة (Scanner engine program error)",
+    "causes": [
+      "تعذر بدء تشغيل برنامج الماسحة."
+    ],
+    "solutions": [
+      "ترقية فيرموير المحرك لأحدث إصدار.",
+      "إيقاف وإعادة تشغيل الطاقة (خطأ فحص المجموع RAM للماسحة).",
+      "إعادة تثبيت وحدة الـ SSD.",
+      "تنظيف أطراف الكونكتورات والكابلات على بوردة المحرك وإعادة توصيلها أو استبدال بوردة المحرك."
+    ]
+  },
+  {
+    "error_code": "F052",
+    "name": "خطأ برنامج محرك لوحة التشغيل (Panel engine program error)",
+    "description": "خطأ برنامج محرك لوحة التشغيل (Panel engine program error)",
+    "causes": [
+      "تعذر بدء تشغيل برنامج لوحة التشغيل (Panel program)."
+    ],
+    "solutions": [
+      "ترقية فيرموير لوحة التشغيل لأحدث إصدار.",
+      "إيقاف وإعادة تشغيل الطاقة (خطأ فحص المجموع RAM للوحة).",
+      "تنظيف الكونكتور على لوحة التشغيل الرئيسية وإعادة توصيله واستبدال السلك إن لزم.",
+      "استبدل لوحة التشغيل الرئيسية (Operation panel main PWB)."
+    ]
+  },
+  {
+    "error_code": "F14E",
+    "name": "خطأ اكتشاف في قسم تحكم الفاكس (Error detection at FAX control section)",
+    "description": "خطأ اكتشاف في قسم تحكم الفاكس (Error detection at FAX control section)",
+    "causes": [
+      "في حال انقطاع الاتصال بين البوردة الرئيسية والفاكس، تتم إعادة إرسال الإشارة ولكنها تستمر في الانتظار حتى وصول الإشارة اللازمة وتحدث حالة قفل (Lock-up)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية بعد 5 ثوانٍ.",
+      "تنظيف أطراف التوصيل بين (Main PWB - FAX PWB) وإعادة توصيل بوردة الفاكس بإحكام.",
+      "ترقية فيرموير الفاكس لأحدث إصدار.",
+      "استبدل بوردة الفاكس (FAX PWB)."
+    ]
+  },
+  {
+    "error_code": "F186",
+    "name": "اكتشاف غير طبيعي في قسم تحكم الفيديو (Abnormal detection in the Video control section)",
+    "description": "اكتشاف غير طبيعي في قسم تحكم الفيديو (Abnormal detection in the Video control section)",
+    "causes": [
+      "يوجد خطأ في الاتصال بين البوردة الرئيسية وبوردة المحرك (Engine PWB)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة بعد 5 ثوانٍ.",
+      "تنظيف أطراف كابلات الـ FFC بين (Engine PWB (YC35) - Main PWB (YC43)) وإعادة توصيلها واستبدال الكابل التالف أو الذي يوجد به قصر.",
+      "ترقية الفيرموير الرئيسي وفيرموير المحرك لأحدث إصدار.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل بوردة المحرك (Engine PWB)."
+    ]
+  },
+  {
+    "error_code": "F278",
+    "name": "خطأ اكتشاف مصدر الطاقة الثانوي (Error detection of the secondary power supply)",
+    "description": "خطأ اكتشاف مصدر الطاقة الثانوي (Error detection of the secondary power supply)",
+    "causes": [
+      "أصبح التشغيل غير مستقرار نتيجة انخفاض مصدر الطاقة الأساسي مؤقتاً ثم تعافيه."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل مفتاح الطاقة الرئيسي والفرعي.",
+      "تنظيف الكونكتور على بوردة الجهد المنخفض (Low voltage PWB) وإعادة توصيل سلك الكونكتور واستبداله عند انقطاع الاستمرارية.",
+      "استبدل بوردة الجهد المنخفض (Low voltage PWB)."
+    ]
+  },
+  {
+    "error_code": "F21X, F22X, F23X",
+    "name": "خطأ اكتشاف غير طبيعي في جزء معالجة الصور (Abnormality detecting in an image-processing part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء معالجة الصور (Abnormality detecting in an image-processing part)",
+    "causes": [
+      "وجود خلل أو خطأ في معالجة الصور على مستوى الكنترولر أو بوردة النظام أو الـ HDD."
+    ],
+    "solutions": [
+      "تهيئة الهارد ديسك بتنفيذ الأمر U024 [FULL] (يؤدي لمسح بيانات المستخدم والبرامج المثبتة ويستلزم إعادة التثبيت).",
+      "تنفيذ الأمر U021 لتهيئة البيانات الاحتياطية للوحدة الرئيسية (Main backup initialization).",
+      "استبدل البوردة الرئيسية (Main board).",
+      "استبدل الهارد ديسك HDD (للطرازات القياسية المزودة بهارد ديسك).",
+      "الحصول على سجل الـ USBLOG والاتصال برئاسة خدمة الصيانة."
+    ]
+  },
+  {
+    "error_code": "F24X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة النظام (Abnormality detecting in the system Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة النظام (Abnormality detecting in the system Management Department)",
+    "causes": [
+      "خطأ في إدارة النظام (F248 يشير إلى شذوذ في عملية الطابعة)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بتنفيذ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي للوحة الرئيسية.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الهارد ديسك.",
+      "الحصول على سجل الـ USBLOG وحزم التقاط البيانات عند التكرار ببيانات طابعة معينة، والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F25X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الشبكة (Abnormality detecting in a network management department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الشبكة (Abnormality detecting in a network management department)",
+    "causes": [
+      "خطأ متعلق بإدارة الشبكة أو بيئة شبكة العميل."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بتنفيذ U024 [FULL].",
+      "تنفيذ الأمر U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "الحصول على سجل الـ USBLOG والتقاط الحزم (Packet capture) والاتصال برئاسة الخدمة."
+    ]
+  },
+  {
+    "error_code": "F26X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة النظام (Abnormality detecting in the system Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة النظام (Abnormality detecting in the system Management Department)",
+    "causes": [
+      "خطأ متعلق بإدارة النظام الداخلي للوحدة."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بتنفيذ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي الرئيسي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على سجل الـ USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F2BX, F2CX, F2DX, F2EX, F2FX, F30X, F31X, F32X",
+    "name": "خطأ اكتشاف غير طبيعي في جزء تحكم الشبكة (Abnormality detecting in a network control part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء تحكم الشبكة (Abnormality detecting in a network control part)",
+    "causes": [
+      "خطأ في الاتصال أو التحكم في بروتوكولات ونظام الشبكة."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بتنفيذ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي الرئيسي.",
+      "استبدل البوردة الرئيسية.",
+      "الحصول على سجل USBLOG والاتصال بالدعم الفني (قد يتطلب الأمر التقاط حزم البيانات Packet capture حسب نتيجة التحليل)."
+    ]
+  },
+  {
+    "error_code": "F33X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الماسحة (Abnormality detecting in the Scan Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الماسحة (Abnormality detecting in the Scan Management Department)",
+    "causes": [
+      "خطأ في الاتصال أو الأجزاء المرتبطة بإدارة وتوصيل الماسحة ووحدة الـ DP."
+    ],
+    "solutions": [
+      "فحص أسلاك التوصيل والكونكتورات بين (Main PWB - Engine PWB - DP Driver PWB) والتأكد من سلامتها.",
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل بوردة تشغيل المحرك/الـ DP (Engine/DP Driver board).",
+      "استبدل البوردة الرئيسية.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F34X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة لوحة التشغيل (Abnormality detecting in the Panel Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة لوحة التشغيل (Abnormality detecting in the Panel Management Department)",
+    "causes": [
+      "خطأ في الاتصال أو التحكم بين لوحة التشغيل والبوردة الرئيسية."
+    ],
+    "solutions": [
+      "فحص الكابلات والكونكتورات بين لوحة التشغيل (Panel) والبوردة الرئيسية (Main PWB - YC12 / Panel PWB - YC5) وإعادة توصيلها.",
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل بوردة لوحة التشغيل (Panel board).",
+      "استبدل البوردة الرئيسية.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F35X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة التحكم بالطباعة (Abnormality detecting in the printing controlling Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة التحكم بالطباعة (Abnormality detecting in the printing controlling Management Department)",
+    "causes": [
+      "خطأ في عمليات تحكم وبرمجيات الطباعة."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F37X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الفاكس (Abnormality detecting in the FAX Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الفاكس (Abnormality detecting in the FAX Management Department)",
+    "causes": [
+      "خطأ متعلق بإدارة وتخزين بيانات الفاكس في النظام."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "تنفيذ عملية مسح وحدات الذاكرة المؤقتة عبر U671 [DIMM Clear] (مع توخي الحذر لعدم ضياع الرسائل الواردة).",
+      "استبدل وحدة ذاكرة FAX_DIMM.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F38X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة المصادقة والتخويل (Abnormality detecting in the authentication authorized Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة المصادقة والتخويل (Abnormality detecting in the authentication authorized Management Department)",
+    "causes": [
+      "خطأ في نظام أو أجهزة المصادقة المرفقة (مثل قارئ الكروت)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F3AX إلى F45X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الكيان (Abnormality detecting in the Entity Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الكيان (Abnormality detecting in the Entity Management Department)",
+    "causes": [
+      "خطأ داخلي في كيان النظام والهيكلة البرمجية."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F46X",
+    "name": "خطأ اكتشاف غير طبيعي في جزء معالجة وتجسيد الطباعة (Abnormality detecting of a printer rendering part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء معالجة وتجسيد الطباعة (Abnormality detecting of a printer rendering part)",
+    "causes": [
+      "خطأ في معالجة Rendering الخاصة بملفات الطباعة (F46F يشير لشذوذ في عملية الطابعة)."
+    ],
+    "solutions": [
+      "استبدال البوردات واختبار التشغيل.",
+      "جمع وتسجيل بيانات USBLOG (وتسجيل بيانات التقاط الطباعة Print capture data عند التكرار مع ملفات معينة)."
+    ]
+  },
+  {
+    "error_code": "F47X, F48X",
+    "name": "خطأ اكتشاف غير طبيعي في جزء معالجة تعديل الصور (Abnormality detecting of an image editing processing part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء معالجة تعديل الصور (Abnormality detecting of an image editing processing part)",
+    "causes": [
+      "خطأ في معالجة وتعديل الصور داخل النظام."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F4AX, F4CX",
+    "name": "خطأ اكتشاف غير طبيعي في جزء معالجة وتجسيد الطباعة (Abnormality detecting of a printer rendering part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء معالجة وتجسيد الطباعة (Abnormality detecting of a printer rendering part)",
+    "causes": [
+      "خطأ في معالجة الرندرة والطباعة."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F4DX",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الكيان (Abnormality detecting in the Entity Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الكيان (Abnormality detecting in the Entity Management Department)",
+    "causes": [
+      "خطأ برمجي أو إداري في كيان النظام."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F4FX",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة المهام (Abnormality detecting in the JOB Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة المهام (Abnormality detecting in the JOB Management Department)",
+    "causes": [
+      "خطأ في إدارة وتنفيذ المهام (Job Management)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "جمع سجل USBLOG مباشرة فور حدوث الخطأ للتحليل والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F50X",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الفاكس (Abnormality detecting in the FAX Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الفاكس (Abnormality detecting in the FAX Management Department)",
+    "causes": [
+      "خطأ في إدارة مهام الفاكس بالنظام."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG فور حدوث الخطأ والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F51X, F52X, F53X, F55X, F56X, F57X",
+    "name": "خطأ اكتشاف غير طبيعي في جزء تنفيذ المهام (Abnormality detecting in a JOB execution part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء تنفيذ المهام (Abnormality detecting in a JOB execution part)",
+    "causes": [
+      "خطأ أثناء تنفيذ مهام الطباعة أو المعالجة."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "جمع سجل USBLOG فوراً عند حدوث الخطأ والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F58X إلى F5EX",
+    "name": "خطأ اكتشاف غير طبيعي في قسم إدارة الخدمات المختلفة (Abnormality detecting in the various-services Management Department)",
+    "description": "خطأ اكتشاف غير طبيعي في قسم إدارة الخدمات المختلفة (Abnormality detecting in the various-services Management Department)",
+    "causes": [
+      "خطأ أثناء تشغيل الخدمات المتنوعة (ملاحظة: F5DX خاصة من 9 إلى D تظهر عند معالجة استقبال الفاكس وأمور URDS، ويجب فحص البيانات المرسلة من الكمبيوتر)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG وقت حدوث الخطأ والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F5FX",
+    "name": "خطأ اكتشاف غير طبيعي في جزء تنفيذ الخدمة (Abnormality detecting in a service execution part)",
+    "description": "خطأ اكتشاف غير طبيعي في جزء تنفيذ الخدمة (Abnormality detecting in a service execution part)",
+    "causes": [
+      "خطأ في تشغيل وخدمات النظام."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG فور حدوث المشكلة والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F60X",
+    "name": "خطأ اكتشاف في وضع الصيانة / قسم إدارة الخدمة عن بعد (Abnormality detecting in the maintenance mode / Remote Service Management Department)",
+    "description": "خطأ اكتشاف في وضع الصيانة / قسم إدارة الخدمة عن بعد (Abnormality detecting in the maintenance mode / Remote Service Management Department)",
+    "causes": [
+      "خطأ في وضع الصيانة أو اكتشاف حالة غير متصلة (Offline) مع النظام الخارجي للخدمة عن بعد (مثل F60A)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "فحص إعدادات شبكة الجهاز وبيئتها (بما في ذلك حالات قطع الاتصال ليلاً أو في عطلات نهاية الأسبوع لحالة F60A).",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F62X",
+    "name": "خطأ اكتشاف في جزء تنفيذ الخدمة (Abnormality detecting in a service execution part)",
+    "description": "خطأ اكتشاف في جزء تنفيذ الخدمة (Abnormality detecting in a service execution part)",
+    "causes": [
+      "خطأ في تنفيذ الخدمات البرمجية."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "جمع USBLOG وقت حدوث الخطأ والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F63X",
+    "name": "خطأ اكتشاف في قسم تحكم الأجهزة (Abnormality detecting in a device control section)",
+    "description": "خطأ اكتشاف في قسم تحكم الأجهزة (Abnormality detecting in a device control section)",
+    "causes": [
+      "خطأ في التحكم بالأجهزة والمكونات."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F68X",
+    "name": "خطأ اكتشاف في قسم تحكم جهاز التخزين (Abnormality detecting in a storage device control section)",
+    "description": "خطأ اكتشاف في قسم تحكم جهاز التخزين (Abnormality detecting in a storage device control section)",
+    "causes": [
+      "خطأ في وحدة التخزين أو خطأ كتابة فوقية عند استخدام طقم أمان الهارد ديسك (F684)."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL] أو SSD بـ U024 [FULL] مع فحص التشغيل بعد التهيئة لكل منهما.",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F69X إلى F6CX",
+    "name": "خطأ اكتشاف في جزء HyPAS-E (Abnormality detecting in a HyPAS-E part)",
+    "description": "خطأ اكتشاف في جزء HyPAS-E (Abnormality detecting in a HyPAS-E part)",
+    "causes": [
+      "خطأ في منصة تطبيقات HyPAS-E والبرمجيات الإضافية."
+    ],
+    "solutions": [
+      "تهيئة الـ HDD بـ U024 [FULL].",
+      "تنفيذ U021 لتهيئة النسخ الاحتياطي.",
+      "استبدل البوردة الرئيسية.",
+      "استبدل الـ HDD.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  },
+  {
+    "error_code": "F6DX إلى F75X",
+    "name": "خطأ اكتشاف في قسم إدارة الخادم الخارجي (Abnormality detecting in the external server Management Department)",
+    "description": "خطأ اكتشاف في قسم إدارة الخادم الخارجي (Abnormality detecting in the external server Management Department)",
+    "causes": [
+      "خطأ في الاتصال أو الخادم الخارجي (ذو صلة بخيار Fiery Option عبر Main PWB YC33 و Fiery BB PWB YC2)."
+    ],
+    "solutions": [
+      "فحص الخادم الخارجي والتحقق من حالة الاتصال وإعدادات الشبكة وإجراء اختبار التشغيل.",
+      "استبدل بوردة الجسر (Bridge board).",
+      "استبدل البوردة الرئيسية.",
+      "الحصول على USBLOG والاتصال بالدعم الفني."
+    ]
+  }
+]

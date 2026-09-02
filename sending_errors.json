@@ -1,0 +1,228 @@
+[
+  {
+    "error_code": "Scan to E-mail : 1101",
+    "description": "خادم SMTP/POP3 غير موجود على الشبكة (SMTP/POP3 server does not exist on the network)",
+    "causes": [
+      "اسم خادم البريد أو إعدادات الشبكة غير صحيحة."
+    ],
+    "solutions": [
+      "تصحيح اسم خادم SMTP/POP3 عبر [Function Settings] > [E-mail] في مركز القيادة (Command Center RX).",
+      "تصحيح إعدادات الشبكة عبر Command Center RX.",
+      "تصحيح إعدادات الشبكة المتصلة بالوحدة الرئيسية."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 1102",
+    "description": "فشل تسجيل الدخول إلى خادم SMTP/POP3 (Login to the SMTP/POP3 server has failed)",
+    "causes": [
+      "اسم المستخدم أو كلمة المرور لخادم البريد غير صحيحة."
+    ],
+    "solutions": [
+      "تصحيح اسم المستخدم أو كلمة المرور لـ SMTP/POP3 عبر [Function Settings] > [E-mail] من Command Center.",
+      "تصحيح إعدادات البروتوكول في إعدادات الشبكة."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 1104",
+    "description": "نطاق عنوان الوجهة مقيد وتم رفض الإرسال (Destination address domain is restricted)",
+    "causes": [
+      "إعدادات الأمان أو نطاقات العناوين المقيدة تمنع الإرسال لهذا النطاق."
+    ],
+    "solutions": [
+      "تصحيح إعدادات النطاق في إعدادات الشبكة عبر مركز القيادة (Command Center)."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 1105",
+    "description": "بروتوكول SMTP غير صالح (SMTP protocol is invalid)",
+    "causes": [
+      "إعدادات بروتوكول البريد الإلكتروني غير صحيحة."
+    ],
+    "solutions": [
+      "تصحيح البروتوكول في إعدادات الشبكة عبر مركز القيادة (Command Center)."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 1106",
+    "description": "عنوان المرسل غير معين (The sender address is not set)",
+    "causes": [
+      "لم يتم ضبط عنوان البريد الإلكتروني للمرسل في الجهاز."
+    ],
+    "solutions": [
+      "ضبط وتصحيح عنوان المرسل وإعدادات البروتوكول عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 2101",
+    "description": "فشل الاتصال بخادم SMTP/POP3 (Connection to the SMTP/POP3 server has failed)",
+    "causes": [
+      "خطأ في اسم خادم البريد الإلكتروني أو منفذ الاتصال."
+    ],
+    "solutions": [
+      "تصحيح اسم خادم SMTP/POP3 عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 2102",
+    "description": "فشل الاتصال بخادم SMTP/POP3 بسبب انتهاء المهلة (Connection timeout)",
+    "causes": [
+      "تأخر الاستجابة من الخادم، أو كابل الشبكة غير متصل، أو رقم المنفذ غير صحيح."
+    ],
+    "solutions": [
+      "تصحيح اسم خادم البريد.",
+      "التأكد من توصيل كابل الـ LAN بالوحدة الرئيسية.",
+      "تصحيح رقم منفذ SMTP/POP3.",
+      "مراجعة إعدادات الشبكة."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 2103",
+    "description": "لا يمكن للخادم إنشاء الاتصال (The server cannot establish communication)",
+    "causes": [
+      "خطأ في اسم الخادم، رقم المنفذ، أو إعدادات الشبكة."
+    ],
+    "solutions": [
+      "تصحيح اسم خادم SMTP/POP3.",
+      "تصحيح رقم المنفذ.",
+      "تصحيح إعدادات الشبكة عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 2201, 2202",
+    "description": "فشل الاتصال / انتهاء المهلة أثناء الاتصال بخادم SMTP/POP3 (Communication to the server has failed)",
+    "causes": [
+      "خطأ في إعدادات الشبكة أو اتصال الخادم أثناء تبادل البيانات."
+    ],
+    "solutions": [
+      "تصحيح إعدادات الشبكة واتصال الجهاز بالشبكة عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 2204",
+    "description": "تجاوز حجم المسح الضوئي للحد الأقصى المسموح به (The size of scanning exceeded its limit)",
+    "causes": [
+      "حجم ملف المستند المسح ضوئياً أكبر من السعة المسموح بها للإرسال عبر البريد."
+    ],
+    "solutions": [
+      "مراجعة إعدادات الشبكة وحجم المستندات المرسلة."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 3101",
+    "description": "استجاب خادم SMTP/POP3 بوجود خطأ (Server responded with an error)",
+    "causes": [
+      "رفض الخادم للطلب أو وجود خطأ في إعدادات البروتوكول."
+    ],
+    "solutions": [
+      "تصحيح إعدادات الشبكة والبروتوكول عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 3201",
+    "description": "لم يتم العثور على مصادقة SMTP (No SMTP authentication is found)",
+    "causes": [
+      "إعدادات المصادقة مطلوبة من الخادم ولكنها غير مفعلة أو خاطئة بالجهاز."
+    ],
+    "solutions": [
+      "ضبط بروتوكول مصادقة SMTP الصحيح عبر [Function Settings] > [E-mail] في مركز القيادة."
+    ]
+  },
+  {
+    "error_code": "Scan to E-mail : 4803",
+    "description": "فشل في إنشاء جلسة SSL (Failed to establish the SSL session)",
+    "causes": [
+      "شهادة الأمان الذاتية أو إعدادات خدمة الشهادات أو بروتوكول الأمان غير صحيحة."
+    ],
+    "solutions": [
+      "تصحيح شهادات الأمان (Self-signed certificate) عبر إعدادات الأمان بمركز القيادة.",
+      "تصحيح إعدادات بروتوكول SMTP/POP3."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 1101",
+    "description": "خادم FTP غير موجود على الشبكة (FTP server does not exist on the network)",
+    "causes": [
+      "اسم مضيف FTP أو إعدادات الشبكة غير صحيحة."
+    ],
+    "solutions": [
+      "تصحيح اسم مضيف FTP عبر Command Center.",
+      "تصحيح إعدادات الشبكة والاتصال."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 1102",
+    "description": "فشل تسجيل الدخول إلى خادم FTP (Login to the FTP server has failed)",
+    "causes": [
+      "اسم المستخدم أو كلمة المرور لخادم FTP غير صحيحة أو إعدادات الخادم غير مناسبة."
+    ],
+    "solutions": [
+      "تصحيح اسم المستخدم وكلمة المرور.",
+      "مراجعة بروتوكول خادم FTP عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 1105",
+    "description": "بروتوكول FTP غير مفعل (FTP protocol is not enabled)",
+    "causes": [
+      "خاصية بروتوكول FTP معطلة في إعدادات الجهاز."
+    ],
+    "solutions": [
+      "تمكين وتصحيح بروتوكول FTP من إعدادات الشبكة عبر مركز القيادة."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 1131, 1132",
+    "description": "فشل تهيئة أو تفاوض بروتوكول TLS (Initializing / TLS negotiation has failed)",
+    "causes": [
+      "إعدادات الأمان للجهاز أو إعدادات خادم FTP غير متطابقة أو خاطئة."
+    ],
+    "solutions": [
+      "تصحيح إعدادات الأمان (Security Settings) عبر Command Center.",
+      "تصحيح بروتوكول خادم FTP."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 2101, 2102",
+    "description": "فشل الاتصال / انتهاء المهلة للاتصال بخادم FTP (Connection to the FTP server has failed)",
+    "causes": [
+      "اسم المضيف خاطئ، كابل الـ LAN غير متصل، أو رقم منفذ FTP غير صحيح."
+    ],
+    "solutions": [
+      "تصحيح اسم مضيف FTP وارتكاز منفذ الاتصال (Port No.).",
+      "التأكد من توصيل كابل الـ LAN.",
+      "مراجعة إعدادات الشبكة."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 2103",
+    "description": "لا يمكن لخادم FTP إنشاء الاتصال (The server cannot establish communication)",
+    "causes": [
+      "خطأ في اسم المضيف، رقم المنفذ، أو إعدادات شبكة الاتصال."
+    ],
+    "solutions": [
+      "تصحيح اسم مضيف FTP، المنفذ، وإعدادات الشبكة عبر Command Center."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 2201, 2202, 2203, 2231",
+    "description": "فشل أو انقطاع الاتصال مع خادم FTP / عدم وجود استجابة (Communication with FTP server has failed)",
+    "causes": [
+      "خطأ في إعدادات الشبكة، اسم مجلد الوجهة (Destination folder name)، أو مشاكل في اتصال FTPS."
+    ],
+    "solutions": [
+      "تصحيح إعدادات الشبكة.",
+      "تعيين اسم مجلد الوجهة الصحيح بدقة.",
+      "مراجعة بروتوكول الخادم."
+    ]
+  },
+  {
+    "error_code": "Scan to FTP : 3101",
+    "description": "استجاب خادم FTP بوجود خطأ (FTP server responded with an error)",
+    "causes": [
+      "رفض الخادم لعملية الإرسال بسبب خطأ في الإعدادات أو الصلاحيات."
+    ],
+    "solutions": [
+      "مراجعة إعدادات الشبكة وبروتوكول الخادم عبر مركز القيادة."
+    ]
+  }
+]

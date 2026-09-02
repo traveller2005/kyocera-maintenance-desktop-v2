@@ -1,0 +1,222 @@
+[
+  {
+    "malfunction_id": 1,
+    "problem_ar": "مقاس الورق المحدد في الدرج يتم اكتشافه بشكل خاطئ أو لا يتم عرضه",
+    "problem_en": "The size of paper set in the cassette is misdetected or not displayed",
+    "extra_description": "مشكلة في اكتشاف مقاس الورق داخل الدرج أو عدم ظهوره بلوحة التشغيل.",
+    "causes": [
+      "عدم عمل مشغل حساس طول الورق (Actuator) أو ذراع المروحة (Fan shaped arm).",
+      "انحراف ذراع تحويل حساس عرض الورق بسبب الإدخال العنيف للدرج مع وجود كمية ورق كبيرة.",
+      "التواء قاعدة الدرج مما يقلل مقدار حركة ذراع مفتاح الجانب (LEVER SIDE SWITCH A).",
+      "تلف حساس طول أو عرض الورق، أو مشاكل في التوصيلات وبوردة Feed drive PWB أو Engine PWB."
+    ],
+    "solutions": [
+      "إعادة تركيب مشغلات حساسات الطول والعرض.",
+      "إذا حدثت المشكلة نتيجة الإدخال العنيف للدرج، اسحب الدرج وأدخله بقوة طبيعية، وقم بتثبيت المقاس يدوياً من قائمة النظام إذا تكرر الأمر بدلاً من وضع [Auto].",
+      "تركيب جزء التعديل (PARTS CASSETTE LEVER ASSY SP - 302L79423_) على مفتاح الجانب LEVER SIDE SWITCH A.",
+      "تنظيف وإعادة توصيل الكونكتورات، أو استبدال حساس الطول أو العرض أو بوردة Feed drive PWB أو Engine PWB."
+    ]
+  },
+  {
+    "malfunction_id": 2,
+    "problem_ar": "مقاس الورق لدرج MP يتم اكتشافه بشكل خاطئ",
+    "problem_en": "The MP tray paper size is misdetected",
+    "extra_description": "",
+    "causes": [
+      "الدرج الفرعي (Sub tray) غير مضبوط في موضع صحيح (لم يتم سحبه لرؤية علامة المثلث أو لم يتم تخزينه بالكامل).",
+      "مشكلة في توصيلات كونكتورات حساسات طول وعرض درج MP مع بوردة Feed drive PWB و Engine PWB.",
+      "تلف حساس عرض أو طول درج MP."
+    ],
+    "solutions": [
+      "سحب الدرج الفرعي للموضع الصحيح (رؤية علامة المثلث) أو إدخاله بالكامل داخل إطار MP.",
+      "تنظيف وإعادة توصيل الكونكتورات الخاصة بحساسات طول وعرض MP.",
+      "إعادة تركيب حساس العرض أو الطول أو استبداله إن لم يتم إصلاحه، أو استبدال بوردة Feed drive PWB أو Engine PWB."
+    ]
+  },
+  {
+    "malfunction_id": 3,
+    "problem_ar": "موتور مروحة وحدة التحكم لا يدور",
+    "problem_en": "The controller fan motor does not rotate",
+    "extra_description": "النتيجة النهائية: حدوث أعطال مثل خروج صور مشوهة نتيجة ارتفاع حرارة المعالج (CPU).",
+    "causes": [
+      "اتساخ مروحة وحدة التحكم بالأتربة والغبار.",
+      "عطل في توصيلات كونكتور مروحة التحكم مع Main PWB.",
+      "تلف مروحة التحكم أو تلف Main PWB."
+    ],
+    "solutions": [
+      "تنظيف مروحة وحدة التحكم من الأتربة.",
+      "تنظيف وإعادة توصيل كونكتور المروحة مع بوردة Main PWB.",
+      "استبدال مروحة وحدة التحكم (Controller fan motor).",
+      "استبدال البوردة الرئيسية (Main PWB)."
+    ]
+  },
+  {
+    "malfunction_id": 4,
+    "problem_ar": "موتور مروحة وحدة التطوير لا يدور",
+    "problem_en": "The developer fan motor does not rotate",
+    "extra_description": "النتيجة النهائية: توقف عمليات الطباعة بشكل متكرر لتبريد داخل الماكينة نتيجة ارتفاع درجة الحرارة الداخلية أثناء الطباعة المستمرة.",
+    "causes": [
+      "تراكم الغبار والأتربة على مروحة التطوير.",
+      "مشكلة في توصيلات الكونكتورات (Developer fan motor - Drum/developer relay PWB - Feed image PWB - Engine PWB).",
+      "تلف مروحة التطوير أو بوردة الترحيل أو بوردة الإدارة."
+    ],
+    "solutions": [
+      "تنظيف مروحة التطوير، وتنفيذ الأمر U037 [DLP1 to DLP4] لتحديد المروحة المعطلة.",
+      "تنظيف وإعادة توصيل الكونكتورات والأسلاك المرتبطة.",
+      "استبدال مروحة التطوير، أو بوردة Drum/developer relay PWB، أو Feed image PWB، أو Engine PWB."
+    ]
+  },
+  {
+    "malfunction_id": 5,
+    "problem_ar": "الوحدة الرئيسية لا تعمل نهائياً حتى عند تشغيل مفتاح الطاقة",
+    "problem_en": "The main unit malfunctions even if turning on the power switch",
+    "extra_description": "",
+    "causes": [
+      "سلك الطاقة (Power cord) ليس به استمرارية أو تالف، أو مقبس الحائط به مشكلة.",
+      "مفتاح الطاقة الرئيسي تالف.",
+      "بوردة الجهد المنخفض (Low voltage PWB) تالفة أو لا تخرج تيار 24V من موصل YC29 بالـ Engine PWB.",
+      "بوردة Engine PWB أو Main PWB بها مشكلة في توصيلات الفيرموير أو الكونكتورات."
+    ],
+    "solutions": [
+      "فحص مقبس الحائط وسلك الطاقة وتوصيلاتهما واستبدال التالف.",
+      "فحص استمرارية مفتاح الطاقة الرئيسي واستبداله عند عدم وجود استمرارية.",
+      "فحص خرج الجهد (24V) من الدبوس 10 في موصل YC29 على بوردة Engine PWB، وتنظيف الكونكتورات وإعادة توصيلها.",
+      "استبدال بوردة Low voltage PWB أو Engine PWB أو Main PWB."
+    ]
+  },
+  {
+    "malfunction_id": 6,
+    "problem_ar": "سقوط الحبر على قسم نقل الورق",
+    "problem_en": "Toner falls over the paper conveying section",
+    "extra_description": "النتيجة النهائية: التصاق الحبر على الحافة الأمامية للورق.",
+    "causes": [
+      "تقشر أو انفكاك ورقة أو شريط منع تناثر الحبر (Toner scattering prevention seal/sheet) في وحدة النقل الأساسية (للموديلات 35 صفحة/دقيقة أو أكثر).",
+      "اتساخ وحدتي التطوير أو الرامك.",
+      "زيادة كمية الحبر في وحدة التطوير أو تدهور جودته."
+    ],
+    "solutions": [
+      "إعادة تثبيت شريط منع تناثر الحبر على وحدة النقل الأساسية.",
+      "تنظيف وحدة التطوير ووحدة الرامك.",
+      "ترقية الفيرموير لأحدث إصدار.",
+      "تنفيذ عملية تحديث التطوير (Developer refresh) مرتين، أو استبدال وحدة التطوير عند تدهور الحبر."
+    ]
+  },
+  {
+    "malfunction_id": 7,
+    "problem_ar": "لا يوجد عرض على لوحة التشغيل / الشاشة بيضاء تماماً",
+    "problem_en": "No display in the operation panel",
+    "extra_description": "",
+    "causes": [
+      "عدم بدء تشغيل الفيرموير الرئيسي بشكل صحيح.",
+      "انقطاع أو عدم توصيل كابلات الطاقة أو بيانات الشاشة بين Main PWB ولوحة التشغيل أو Low voltage PWB.",
+      "تلف المكثف على بوردة Engine PWB أو تلف بوردة Low voltage PWB."
+    ],
+    "solutions": [
+      "إعادة تشغيل الطاقة بعد 5 ثوانٍ وضبط مستوى السكون على [Quick Recovery].",
+      "تنظيف وإعادة توصيل كونكتورات كابلات (Main PWB - Operation panel main PWB / Low voltage PWB) واستبدال التالف.",
+      "استبدال Main PWB، أو Operation panel main PWB، أو Engine PWB، أو Low voltage PWB."
+    ]
+  },
+  {
+    "malfunction_id": 8,
+    "problem_ar": "لوحة التشغيل تظل تعرض كلمة \"WELCOME\" ولا تتغير",
+    "problem_en": "The operation panel remains displaying \"WELCOME\"",
+    "extra_description": "تعذر الاتصال بين البوردة الرئيسية (Main PWB) وبوردة لوحة التشغيل الرئيسية.",
+    "causes": [
+      "مشكلة في الاتصال أو كابل الـ SATA بين البوردة الرئيسية ولوحة التشغيل، أو تلف الذاكرة الاحتياطية (Backup RAM)، أو تلف اللوحات."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية بعد 5 ثوانٍ.",
+      "تنظيف وإعادة توصيل سلك وكابل الـ SATA بين Main PWB و Operation panel main PWB واستبدال التالف.",
+      "تنفيذ الأمر U021 لتهيئة بيانات Backup RAM.",
+      "استبدال Main PWB أو Operation panel main PWB."
+    ]
+  },
+  {
+    "malfunction_id": 9,
+    "problem_ar": "لا توجد استجابة عند الضغط على لوحة التشغيل",
+    "problem_en": "No action by pressing the operation panel",
+    "extra_description": "",
+    "causes": [
+      "وجود أجسام غريبة أو أتربة محشورة في الفجوة بين غطاء التشغيل وشاشة اللمس، مما يجعل شاشة اللمس تستجيب لتلك النقطة وتتجاهل اللمس الفعلي للمستخدم."
+    ],
+    "solutions": [
+      "إزالة الأجسام الغريبة والأتربة المتراكمة حول شاشة اللمس."
+    ]
+  },
+  {
+    "malfunction_id": 10,
+    "problem_ar": "فشل تسجيل الدخول باستخدام غير بطاقة الهوية",
+    "problem_en": "The login fails with other than the ID card",
+    "extra_description": "",
+    "causes": [
+      "تفعيل حساب المستخدم/المهام ([User/Job Account]) بينما طقم مصادقة الكروت غير مثبت."
+    ],
+    "solutions": [
+      "ضبط خيار [Permit] في مسار [User/Job Account] > [ID Card Settings] > [Key Login] عبر قائمة النظام (System Menu)."
+    ]
+  },
+  {
+    "malfunction_id": 11,
+    "problem_ar": "مقاس الأصل على زجاج المستندات يتم اكتشافه بشكل خاطئ",
+    "problem_en": "The original size on the original glass is misdetected",
+    "extra_description": "يتم عرض أصل مقاس A4 على أنه مقاس A3 عند وضعه على زجاج التلامس وإغلاق الغطاء.",
+    "causes": [
+      "مشكلة في توصيلات كونكتورات حساس توقيت مقاس الأصل (Original size timing sensor) أو حساس مقاس الأصل مع Engine PWB.",
+      "تلف أو عدم عمل حساس توقيت مقاس الأصل أو حساس المقاس نفسه."
+    ],
+    "solutions": [
+      "تنظيف وإعادة توصيل الكونكتورات والأسلاك لحساسات مقاس الأصل مع Engine PWB.",
+      "الضغط على مشغل حساس توقيت مقاس الأصل والتأكد من إضاءة لمبة الإضاءة (Exposure lamp)، واستبدال الحساس إن لم يعمل.",
+      "إعادة تركيب حساس مقاس الأصل أو استبداله.",
+      "استبدال بوردة Engine PWB."
+    ]
+  },
+  {
+    "malfunction_id": 12,
+    "problem_ar": "غطاء حاوية الحبر لا يفتح رغم عدم تركيب حاوية الحبر",
+    "problem_en": "The container cover is not opened although the toner container is not installed",
+    "extra_description": "",
+    "causes": [
+      "مشكلة في عمل سولينويد الحاوية (Container solenoid) أو انقطاع استمراريته.",
+      "عدم توصيل الكونكتور بشكل سليم.",
+      "مشكلة في بوردة Feed image PWB أو Engine PWB."
+    ],
+    "solutions": [
+      "تنفيذ الأمر U033 [Container Cover] لفحص تشغيل السولينويد، وإعادة إدخال الكونكتور أو إصلاح السلك.",
+      "فحص استمرارية سولينويد الحاوية واستبداله إن لم تكن هناك استمرارية.",
+      "إعادة توصيل أو استبدال بوردة Feed image PWB أو Engine PWB."
+    ]
+  },
+  {
+    "malfunction_id": 13,
+    "problem_ar": "أيقونة الفاكس لا تظهر على لوحة التشغيل رغم تثبيت بوردة الفاكس",
+    "problem_en": "The FAX icon is not displayed on the operation panel even if installing FAX PWB",
+    "extra_description": "",
+    "causes": [
+      "عدم تثبيت بوردة الفاكس (FAX PWB) بشكل صحيح.",
+      "إصدار فيرموير الفاكس قديم وغير متوافق.",
+      "مشكلة في توصيلات بوردة الفاكس مع Main PWB أو تلف بوردة الفاكس."
+    ],
+    "solutions": [
+      "إعادة إيقاف الطاقة وإعادة تثبيت بوردة الفاكس بإحكام.",
+      "التحقق من إصدار فيرموير الفاكس عبر U019 وترقيته لأحدث إصدار.",
+      "استبدال بوردة الفاكس.",
+      "إعادة توصيل أو استبدال بوردة Main PWB."
+    ]
+  },
+  {
+    "malfunction_id": 14,
+    "problem_ar": "لوحة التشغيل لا تعرض الفينيشر رغم تثبيته",
+    "problem_en": "The operation panel does not display the finisher",
+    "extra_description": "لفينيشر 4000 ورقة (Object: 4000-sheet finisher).",
+    "causes": [
+      "الفينيشر لا يعمل بشكل صحيح بعد توصيله.",
+      "سوء التوصيل بين الفينيشر والماكينة الرئيسية (دبابيس موصل الدرج Drawer connector)."
+    ],
+    "solutions": [
+      "إيقاف وإعادة تشغيل الطاقة الرئيسية والفرعية.",
+      "إعادة تثبيت الفينيشر بالماكينة الرئيسية والتأكد من سلامة الكونكتورات والأسلاك وتوصيلات خيارات التوصيل."
+    ]
+  }
+]
